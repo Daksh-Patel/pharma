@@ -184,3 +184,30 @@
     @apply cursor-pointer;
   }
 }
+
+.container {
+  width: 100%;
+  max-width: 1560px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.menuLink {
+  position: relative;
+}
+
+.menuLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #28a745; /* bg-red-600 */
+  transition: all linear 0.3s;
+}
+
+.menuLink:hover::after {
+  width: 100%;
+}
