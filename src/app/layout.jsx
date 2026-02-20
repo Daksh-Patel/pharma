@@ -1,6 +1,10 @@
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header/header"
+import Footer from "@/components/footer/footer"
+import SocialSidebar from "@/components/socialSidebar"
+import { TooltipProvider } from "@/tailwind-components/ui/tooltip"
+import WhatsappFloat from "@/components/whatsappFloat"
 
 const geistSans = Inter({
   variable: "--font-sans",
@@ -23,8 +27,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
-        {children}
+        <TooltipProvider>
+          {" "}
+          <Header />
+          <SocialSidebar />
+          {children}
+          <Footer />
+          <WhatsappFloat />
+        </TooltipProvider>
       </body>
     </html>
   )
