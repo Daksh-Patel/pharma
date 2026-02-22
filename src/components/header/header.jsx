@@ -6,7 +6,7 @@ import HeaderMenu from "./header-menu"
 
 const Header = () => {
   return (
-    <header className='py-4'>
+    <header className='py-4 sticky w-full top-0 bg-white border-b z-50'>
       <div className='container'>
         <div className='flex items-center justify-between space-x-4'>
           <Link href={"/"}>

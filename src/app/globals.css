@@ -176,6 +176,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
   }
   body {
     @apply bg-background text-foreground;
@@ -210,4 +211,25 @@
 
 .menuLink:hover::after {
   width: 100%;
+}
+
+.banner_img {
+  position: relative;
+}
+
+.banner_img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8) 10%,
+    rgba(255, 255, 255, 0.7) 35%,
+    rgba(255, 255, 255, 0.4) 55%,
+    rgba(255, 255, 255, 0.15) 70%,
+    rgba(255, 255, 255, 0) 85%
+  );
 }

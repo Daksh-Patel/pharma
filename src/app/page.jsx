@@ -1,10 +1,10 @@
-import { Button } from "@/tailwind-components/ui/button"
-import Image from "next/image"
+import HomeBanner from "@/components/banner"
+import { Suspense } from "react"
 
 export default function Home() {
   return (
-    <div className='flex min-h-screen items-center justify-center bg-zinc-50 font-sans '>
-      <Button>Daksh</Button>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeBanner />
+    </Suspense>
   )
 }
