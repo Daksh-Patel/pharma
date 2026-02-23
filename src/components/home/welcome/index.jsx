@@ -7,7 +7,7 @@ import { CircleChevronRight } from "lucide-react"
 
 const WelcomeSection = () => {
   return (
-    <section className='py-20 bg-white relative overflow-hidden px-5'>
+    <section className='py-20 bg-white relative px-5'>
       <div className='container'>
         <div className='grid md:grid-cols-2 gap-12 items-center'>
           {/* LEFT IMAGE */}

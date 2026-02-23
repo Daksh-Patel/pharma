@@ -1,5 +1,6 @@
 import HomeBanner from "@/components/home/banner"
 import WelcomeSection from "@/components/home/welcome"
+import NewArrivals from "@/components/home/new-arrival"
 import { Suspense } from "react"
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
       <HomeBanner />
 
       <WelcomeSection />
+
+      <NewArrivals />
     </Suspense>
   )
 }

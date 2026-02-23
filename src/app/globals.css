@@ -251,6 +251,25 @@
   background: #28a745;
 }
 
+.title_center_underline {
+  width: 160px;
+  height: 1px;
+  background: #dddddd;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.title_center_underline::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #28a745;
+}
+
 .solidButton {
   @apply bg-primary text-white relative overflow-hidden;
   transition: all 0.3s ease-in-out;
