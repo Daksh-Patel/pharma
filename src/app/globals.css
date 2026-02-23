@@ -188,7 +188,7 @@
 
 .container {
   width: 100%;
-  max-width: 1560px;
+  max-width: 1470px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -226,10 +226,48 @@
 
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.8) 10%,
+    rgba(255, 255, 255, 0.75) 10%,
     rgba(255, 255, 255, 0.7) 35%,
     rgba(255, 255, 255, 0.4) 55%,
     rgba(255, 255, 255, 0.15) 70%,
     rgba(255, 255, 255, 0) 85%
   );
+}
+
+.title_underline {
+  width: 160px;
+  height: 1px;
+  background: #dddddd;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.title_underline::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 60px;
+  height: 3px;
+  background: #28a745;
+}
+
+.solidButton {
+  @apply bg-primary text-white relative overflow-hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.solidButton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+
+.solidButton:hover::after {
+  width: 100%;
 }
