@@ -10,18 +10,17 @@ import ProductImage2 from "@/assets/images/Gastroprazole-40.jpeg"
 import ProductImage3 from "@/assets/images/KINRAB.jpeg"
 import ProductImage4 from "@/assets/images/PIP-Injection.jpeg"
 import ProductImage5 from "@/assets/images/Val-S-200-2.jpg"
-import { ChevronLeft, ChevronRight, CircleChevronRight } from "lucide-react"
-import { Button } from "@/tailwind-components/ui/button"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const products = [
-  { image: ProductImage1, title: "Cinnerine" },
-  { image: ProductImage2, title: "Gastroprazole-40" },
-  { image: ProductImage3, title: "Kinrab" },
-  { image: ProductImage4, title: "PIP Injection" },
-  { image: ProductImage5, title: "Val-S 200" },
+  { image: ProductImage1, title: "Product 1" },
+  { image: ProductImage2, title: "Product 2" },
+  { image: ProductImage3, title: "Product 3" },
+  { image: ProductImage4, title: "Product 4" },
+  { image: ProductImage5, title: "Product 5" },
 ]
 
-export default function NewArrivals() {
+export default function OurRegisteredProduct() {
   const autoplay = useRef(
     Autoplay({
       delay: 2500,
@@ -46,7 +45,7 @@ export default function NewArrivals() {
       <div className='container mx-auto px-4'>
         {/* Title */}
         <div className='text-center mb-4 text-4xl font-bold'>
-          New <span className='text-primary'>Arrivals</span>
+          Our <span className='text-primary'>Registered Products</span>
         </div>
 
         <div className='title_center_underline mx-auto' />
@@ -107,12 +106,6 @@ export default function NewArrivals() {
           >
             <ChevronRight />
           </button>
-        </div>
-
-        <div className='flex items-center justify-center'>
-          <Button className={"solidButton mt-12 rounded-sm"} size='lg'>
-            Read More <CircleChevronRight />
-          </Button>
         </div>
       </div>
     </section>

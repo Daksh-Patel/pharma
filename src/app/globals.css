@@ -189,7 +189,7 @@
 .container {
   width: 100%;
   max-width: 1470px;
-  padding: 0 20px;
+  padding: 0 130px;
   margin: 0 auto;
 }
 
@@ -287,6 +287,36 @@
   transition: width 0.3s ease-in-out;
 }
 
-.solidButton:hover::after {
+.solidButton:hover::after,
+.solidButton2:hover::after {
+  width: 100%;
+}
+
+.solidButton2:hover {
+  @apply text-black;
+}
+
+.solidButton2 {
+  @apply bg-black text-white relative overflow-hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.solidButton2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.3s ease-in-out;
+}
+
+.welcome_section {
+  background-image: url("/welcome_bg.jpg");
+  background-size: cover;
+  background-position: center bottom; /* ✅ Important */
+  background-repeat: no-repeat;
   width: 100%;
 }
