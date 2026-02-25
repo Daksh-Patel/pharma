@@ -4,6 +4,7 @@ import NewArrivals from "@/components/home/new-arrival"
 import { Suspense } from "react"
 import Brochures from "@/components/home/brochures"
 import OurRegisteredProduct from "@/components/home/registered-product"
+import OurProduct from "@/components/home/our-product"
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <Brochures />
 
       <OurRegisteredProduct />
+
+      <OurProduct />
     </Suspense>
   )
 }
