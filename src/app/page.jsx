@@ -5,6 +5,7 @@ import { Suspense } from "react"
 import Brochures from "@/components/home/brochures"
 import OurRegisteredProduct from "@/components/home/registered-product"
 import OurProduct from "@/components/home/our-product"
+import GlobalPresence from "@/components/home/global-presence"
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <OurRegisteredProduct />
 
       <OurProduct />
+
+      <GlobalPresence />
     </Suspense>
   )
 }

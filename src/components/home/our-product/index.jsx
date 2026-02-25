@@ -57,7 +57,7 @@ const ProductList = [
 const OurProduct = () => {
   return (
     <section className='py-20 bg-white'>
-      <div className='container mx-auto px-4'>
+      <div className='container'>
         {/* Title */}
         <div className='text-center mb-4 text-4xl font-bold'>
           Our <span className='text-primary'>Products</span>
