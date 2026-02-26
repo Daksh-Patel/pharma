@@ -44,9 +44,9 @@ export default function OurRegisteredProduct() {
     <section className='py-20 bg-gray-100'>
       <div className='container mx-auto px-4'>
         {/* Title */}
-        <div className='text-center mb-4 text-4xl font-bold'>
+        <h2 className='text-center mb-4 text-4xl font-bold'>
           Our <span className='text-primary'>Registered Products</span>
-        </div>
+        </h2>
 
         <div className='title_center_underline mx-auto' />
 
