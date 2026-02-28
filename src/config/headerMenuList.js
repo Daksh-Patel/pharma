@@ -34,43 +34,43 @@ export const HeaderMenuLists = [
     children: [
       {
         id: 31,
-        title: "cardiovascular",
-        href: "/",
+        title: "Cardiovascular",
+        href: "/products/cardiovascular",
       },
       {
         id: 32,
         title: "Anti Diabetic",
-        href: "/",
+        href: "/products/anti-diabetic",
       },
       {
         id: 33,
         title: "Anti Bacterial",
-        href: "/",
+        href: "/products/anti-bacterial",
       },
       {
         id: 34,
         title: "Anti Ulcer",
-        href: "/",
+        href: "/products/anti-ulcer",
       },
       {
         id: 35,
         title: "Anti Fungal",
-        href: "/",
+        href: "/products/anti-fungal",
       },
       {
         id: 36,
         title: "Anti Allergic",
-        href: "/",
+        href: "/products/anti-allergic",
       },
       {
         id: 37,
         title: "Pain Management",
-        href: "/",
+        href: "/products/pain-management",
       },
       {
         id: 38,
-        title: "Food Supplements And Neutraceutical products",
-        href: "/",
+        title: "Food Supplements And Nutraceutical Products",
+        href: "/products/nutraceutical",
       },
     ],
   },
