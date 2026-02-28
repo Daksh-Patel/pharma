@@ -13,7 +13,7 @@ export const HeaderMenuLists = [
       {
         id: 11,
         title: "Our Profile",
-        href: "/",
+        href: "/profile",
       },
       {
         id: 12,
