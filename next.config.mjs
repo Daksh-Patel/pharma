@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
-};
+  output: "export",
+  distDir: "dist", // 👈 change folder name here
+  images: {
+    unoptimized: true, // 👈 VERY IMPORTANT
+  },
+}
 
-export default nextConfig;
+export default nextConfig
