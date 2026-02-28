@@ -12,21 +12,35 @@ import {
   navigationMenuTriggerStyle,
 } from "@/tailwind-components/ui/navigation-menu"
 import { HeaderMenuLists } from "@/config/headerMenuList"
+import { cn } from "@/lib/utils"
 
-const ListItem = ({ title, children, href, ...props }) => {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link href={href} className='font-semibold'>
-          <div className='flex flex-col gap-1 text-sm'>
-            <div className='font-semibold leading-5'>{title}</div>
-            <div className='text-muted-foreground line-clamp-2'>{children}</div>
-          </div>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  )
-}
+const ListItem = React.forwardRef(
+  ({ className, title, children, href, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <Link
+            ref={ref}
+            href={href}
+            className={cn(
+              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              className,
+            )}
+            {...props}
+          >
+            <div className='text-sm font-semibold leading-none'>{title}</div>
+            {children && (
+              <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>
+                {children}
+              </p>
+            )}
+          </Link>
+        </NavigationMenuLink>
+      </li>
+    )
+  },
+)
+ListItem.displayName = "ListItem"
 
 const HeaderMenu = () => {
   return (
@@ -44,7 +58,7 @@ const HeaderMenu = () => {
                 >
                   <Link
                     href={link.href}
-                    className='menuLink hover:bg-white focus:bg-white hover:data-[state=open]:bg-white font-semibold uppercase'
+                    className='menuLink hover:bg-white focus:bg-white data-[state=open]:bg-white font-semibold uppercase'
                   >
                     {link.title}
                   </Link>
@@ -55,17 +69,19 @@ const HeaderMenu = () => {
 
           return (
             <NavigationMenuItem className='hidden md:flex' key={link.id}>
-              <NavigationMenuTrigger className='menuLink hover:bg-white focus:bg-white hover:data-[state=open]:bg-white font-semibold uppercase'>
+              <NavigationMenuTrigger className='menuLink hover:bg-white focus:bg-white data-[state=open]:bg-white font-semibold uppercase'>
                 {link.title}
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className='w-50'>
+                <ul className='grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150'>
                   {link.children.map((component) => (
                     <ListItem
                       key={component.id}
                       title={component.title}
                       href={component.href}
-                    />
+                    >
+                      {component.description}
+                    </ListItem>
                   ))}
                 </ul>
               </NavigationMenuContent>
