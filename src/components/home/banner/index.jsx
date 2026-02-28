@@ -1,12 +1,12 @@
 "use client"
 
-import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 import BannerImage1 from "@/assets/images/banner_img1.png"
 import BannerImage2 from "@/assets/images/banner_img2.png"
 import BannerImage3 from "@/assets/images/banner_img3.png"
+import Image from "next/image"
 
 const slides = [
   {
