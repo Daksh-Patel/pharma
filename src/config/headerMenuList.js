@@ -23,7 +23,7 @@ export const HeaderMenuLists = [
       {
         id: 13,
         title: "Quality Policy",
-        href: "/",
+        href: "/quality-policy",
       },
     ],
   },
