@@ -21,7 +21,7 @@ const ReuseBannerSection = ({ title }) => {
       {/* Content */}
       <div className='absolute inset-0 flex items-center justify-between'>
         <div className='container flex items-center justify-between'>
-          <h1 className='text-white text-4xl md:text-4xl font-semibold max-w-3xl leading-snug'>
+          <h1 className='text-white text-4xl md:text-4xl font-bold max-w-3xl leading-snug'>
             {title}
           </h1>
         </div>

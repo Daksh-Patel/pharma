@@ -23,7 +23,7 @@ const ListItem = React.forwardRef(
             ref={ref}
             href={href}
             className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+              "block select-none space-y-1 text-xs font-extrabold rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
               className,
             )}
             {...props}
@@ -46,48 +46,50 @@ const HeaderMenu = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        {HeaderMenuLists.map((link) => {
-          const isChildren = link.children.length > 0
+        <div className='flex items-center space-x-5'>
+          {HeaderMenuLists.map((link) => {
+            const isChildren = link.children.length > 0
 
-          if (!isChildren) {
-            return (
-              <NavigationMenuItem key={link.id}>
-                <NavigationMenuLink
-                  asChild
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <Link
-                    href={link.href}
-                    className='menuLink hover:bg-white focus:bg-white data-[state=open]:bg-white font-semibold uppercase'
+            if (!isChildren) {
+              return (
+                <NavigationMenuItem key={link.id}>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
                   >
-                    {link.title}
-                  </Link>
-                </NavigationMenuLink>
+                    <Link
+                      href={link.href}
+                      className='menuLink hover:bg-white focus:bg-white p-0 data-[state=open]:bg-white uppercase text-xs font-bold'
+                    >
+                      {link.title}
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              )
+            }
+
+            return (
+              <NavigationMenuItem className='hidden md:flex' key={link.id}>
+                <NavigationMenuTrigger className='menuLink hover:bg-white focus:bg-white data-[state=open]:bg-white uppercase text-xs font-extrabold'>
+                  {link.title}
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className='grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150'>
+                    {link.children.map((component) => (
+                      <ListItem
+                        key={component.id}
+                        title={component.title}
+                        href={component.href}
+                      >
+                        {component.description}
+                      </ListItem>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
               </NavigationMenuItem>
             )
-          }
-
-          return (
-            <NavigationMenuItem className='hidden md:flex' key={link.id}>
-              <NavigationMenuTrigger className='menuLink hover:bg-white focus:bg-white data-[state=open]:bg-white font-semibold uppercase'>
-                {link.title}
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className='grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150'>
-                  {link.children.map((component) => (
-                    <ListItem
-                      key={component.id}
-                      title={component.title}
-                      href={component.href}
-                    >
-                      {component.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          )
-        })}
+          })}
+        </div>
       </NavigationMenuList>
     </NavigationMenu>
   )
