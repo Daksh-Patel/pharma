@@ -122,13 +122,13 @@ export const HeaderMenuLists = [
   {
     id: 7,
     title: "Careers",
-    href: "/",
+    href: "/career",
     children: [],
   },
   {
     id: 8,
     title: "Contact Us",
-    href: "/",
+    href: "/contact",
     children: [],
   },
 ]
