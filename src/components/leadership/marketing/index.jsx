@@ -35,8 +35,7 @@ const MarketingSection = () => {
 
         <div className='pl-3 border-l-4 border-l-gray-400 bg-white py-3 mb-5'>
           <p className='text-base'>
-            <b>Saviour Pharmaceuticals</b> | April 2012 – Present | Ahmedabad,
-            India
+            <b>Gristy Pharma</b> | April 2012 – Present | Ahmedabad, India
           </p>
 
           <p className='text-base mt-3'>

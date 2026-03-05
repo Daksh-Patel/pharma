@@ -93,17 +93,17 @@ export const HeaderMenuLists = [
       {
         id: 43,
         title: "Generic Medicine",
-        href: "/",
+        href: "/generic-medicine",
       },
       {
         id: 44,
         title: "Pharma Manufacturing",
-        href: "/",
+        href: "/pharma-manufacturing",
       },
       {
         id: 45,
         title: "Pharma Focus",
-        href: "/",
+        href: "/pharma-focus",
       },
     ],
   },

@@ -39,11 +39,11 @@ const Featuring = () => {
           </h2>
 
           <p className='text-gray-600 leading-relaxed'>
-            Saviour Pharmaceuticals is a top name in India’s pharmaceutical
-            industry, renowned for manufacturing, marketing, distributing, and
-            sourcing high-quality pharmaceutical products. As a trusted leader
-            in capsule production, we offer a diverse range of tablets including
-            pills, caplets, and orally disintegrating tablets.
+            Gristy Pharma is a top name in India’s pharmaceutical industry,
+            renowned for manufacturing, marketing, distributing, and sourcing
+            high-quality pharmaceutical products. As a trusted leader in capsule
+            production, we offer a diverse range of tablets including pills,
+            caplets, and orally disintegrating tablets.
           </p>
 
           <p className='text-gray-600 leading-relaxed'>

@@ -32,9 +32,9 @@ const NutraceuticalManufacturing = () => {
           {/* Two column text */}
           <div className='grid md:grid-cols-2 gap-6 text-gray-600 leading-relaxed'>
             <p>
-              At Saviour Pharmaceuticals, we believe that good health starts
-              with good nutrition. Unfortunately, many of us struggle to
-              maintain a balanced diet due to busy lifestyles.
+              At Gristy Pharma, we believe that good health starts with good
+              nutrition. Unfortunately, many of us struggle to maintain a
+              balanced diet due to busy lifestyles.
             </p>
 
             <p>
@@ -48,8 +48,7 @@ const NutraceuticalManufacturing = () => {
           {/* Highlight Box */}
           <div className='bg-gray-100 p-5 rounded-md text-gray-700'>
             If you're looking to launch a new nutraceutical product and need the
-            best manufacturing partner in India, Saviour Pharmaceuticals is here
-            to help.
+            best manufacturing partner in India, Gristy Pharma is here to help.
           </div>
         </div>
 
@@ -126,8 +125,8 @@ const NutraceuticalManufacturing = () => {
               <AccordionTrigger>FSSAI Compliance</AccordionTrigger>
 
               <AccordionContent>
-                At Saviour Pharmaceuticals, we prioritize quality and safety by
-                using FSSAI-approved ingredients in all our products.
+                At Gristy Pharma, we prioritize quality and safety by using
+                FSSAI-approved ingredients in all our products.
               </AccordionContent>
             </AccordionItem>
 

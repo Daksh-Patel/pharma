@@ -27,21 +27,21 @@ const WelcomeSection = () => {
             </h4>
 
             <h2 className='text-4xl font-bold text-primary mb-4'>
-              Saviour Pharmaceuticals
+              Gristy Pharma
             </h2>
 
             {/* Underline */}
             <div className='title_underline'></div>
 
             <p className='text-gray-600 leading-8 mb-6'>
-              Saviour pharmaceuticals is one of the leading companies of India
-              working with a wide range of products of orals, liquids and
-              injectables. An integrated healthcare solutions provider with
-              pharmaceutical product basket, it caters to over 250+ therapeutic
-              products, 7+ formulations that include cardiovascular,
-              gastrointestinal, analgesics, haematinics, anti-infectives and
-              antibiotics, respiratory agents, antidiabetics and immunologicals
-              collaborating with 7+ Countries.
+              Gristy Pharma is one of the leading companies of India working
+              with a wide range of products of orals, liquids and injectables.
+              An integrated healthcare solutions provider with pharmaceutical
+              product basket, it caters to over 250+ therapeutic products, 7+
+              formulations that include cardiovascular, gastrointestinal,
+              analgesics, haematinics, anti-infectives and antibiotics,
+              respiratory agents, antidiabetics and immunologicals collaborating
+              with 7+ Countries.
             </p>
 
             <Button className='solidButton'>

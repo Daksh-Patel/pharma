@@ -16,9 +16,9 @@ export default function Opportunity() {
           <div className='title_underline' />
 
           <p className='text-gray-600 leading-relaxed'>
-            At Saviour Pharmaceuticals, we put people first. We value
-            individuals and offer a dynamic work atmosphere that facilitates
-            growth on both personal and professional fronts.
+            At Gristy Pharma, we put people first. We value individuals and
+            offer a dynamic work atmosphere that facilitates growth on both
+            personal and professional fronts.
           </p>
 
           <Button className='w-full'>gristy@pharma.com</Button>

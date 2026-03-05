@@ -18,12 +18,12 @@ const WelcomeSection = () => {
               </h5>
 
               <h2 className='text-2xl font-bold text-primary'>
-                Welcome to Saviour Pharmaceuticals
+                Welcome to Gristy Pharma
               </h2>
             </div>
             <div className=''>
               <p className='text-gray-700 leading-8 mb-6 text-justify'>
-                Saviour Pharmaceuticals is one of India’s leading pharmaceutical
+                Gristy Pharma is one of India’s leading pharmaceutical
                 companies. We offer a wide range of food and Nutra products,
                 including oral medicines, liquids, and injectables. With over
                 250 therapeutic products across seven formulations, we focus on

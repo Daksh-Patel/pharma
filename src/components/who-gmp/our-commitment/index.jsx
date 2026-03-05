@@ -14,7 +14,7 @@ const OurCommitment = () => {
         <WhoGmpSection
           title='Our Commitment to Excellence'
           paragraphs={[
-            "At Saviour Pharmaceuticals, quality is our top priority. We follow global standards and strict quality control at every step.",
+            "At Gristy Pharma, quality is our top priority. We follow global standards and strict quality control at every step.",
             "We have a strong Quality Management System guiding our processes and ensuring high standards in every product.",
           ]}
         />
@@ -23,7 +23,7 @@ const OurCommitment = () => {
         <WhoGmpSection
           title='WHO-GMP Approved Pharmaceutical Facilities'
           paragraphs={[
-            "Saviour Pharmaceuticals was founded to provide innovative medicines and essential healthcare products with top-notch quality control.",
+            "Gristy Pharma was founded to provide innovative medicines and essential healthcare products with top-notch quality control.",
             "As one of India’s leading WHO-GMP certified companies, we have earned a strong reputation as a reliable pharma exporter.",
           ]}
         />
@@ -90,7 +90,7 @@ const OurCommitment = () => {
         <WhoGmpSection
           title='Our Mission and Vision'
           paragraphs={[
-            "Saviour Pharmaceuticals is built on three pillars: customers, products, and employees.",
+            "Gristy Pharma is built on three pillars: customers, products, and employees.",
             "Our mission is to ensure profitable growth for our customers.",
             "Our vision is to be globally recognized as a reliable pharma export partner.",
           ]}

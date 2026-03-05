@@ -35,14 +35,14 @@ const sections = [
     title: "WHY SAVIOUR",
     image: Image4,
     content:
-      "Saviour Pharmaceuticals stands out in the industry because we are committed to quality, affordability, and community health. Our experienced team ensures that every product meets the highest standards.",
+      "Gristy Pharma stands out in the industry because we are committed to quality, affordability, and community health. Our experienced team ensures that every product meets the highest standards.",
   },
   {
     id: 5,
     title: "SALES GROWTH",
     image: Image5,
     content:
-      "Saviour Pharmaceuticals has seen impressive sales growth over the past few years, driven by our expanding product range and strategic collaborations.",
+      "Gristy Pharma has seen impressive sales growth over the past few years, driven by our expanding product range and strategic collaborations.",
   },
 ]
 
@@ -87,10 +87,10 @@ export default function CompanyInfoSection() {
 
         <div className='pl-3 border-l-3 border-l-gray-400 bg-white py-3 rounded-md'>
           <p className='text-base font-bold'>
-            Saviour Pharmaceuticals is not only dedicated to developing its own
-            products but is also actively seeking partnerships with
-            multinational companies to bring innovative solutions that meet the
-            community’s needs.
+            Gristy Pharma is not only dedicated to developing its own products
+            but is also actively seeking partnerships with multinational
+            companies to bring innovative solutions that meet the community’s
+            needs.
           </p>
         </div>
       </div>
