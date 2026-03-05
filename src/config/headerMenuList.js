@@ -83,12 +83,12 @@ export const HeaderMenuLists = [
       {
         id: 41,
         title: "Tablet Manufacturing",
-        href: "/",
+        href: "/tablet-manufacturing",
       },
       {
         id: 42,
         title: "Nutraceuticals Manufacturing",
-        href: "/",
+        href: "/nutraceuticals-manufacturing",
       },
       {
         id: 43,
