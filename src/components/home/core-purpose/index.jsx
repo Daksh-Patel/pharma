@@ -33,19 +33,22 @@ const PurposeLists = [
 
 export default function CorePurposeSection() {
   return (
-    <div className='min-h-screen bg-background'>
+    <div className='bg-background'>
       {/* Core Pillars Section */}
-      <section className='py-20'>
+      <section className='py-14 md:py-20'>
         <div className='container'>
-          <div className='text-center mb-16'>
-            <h2 className='text-3xl lg:text-4xl font-bold text-primary mb-4'>
-              Our Core Purpose & Future Vision
-            </h2>
-            <p className='text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed'>
-              Gristy Pharma is built on three pillars: customers, products, and
-              employees
-            </p>
+          {/* Title */}
+          <div className='text-center mb-4 text-3xl md:text-4xl font-bold'>
+            Our Core Purpose &{" "}
+            <span className='text-primary'>Future Vision</span>
           </div>
+
+          <div className='title_center_underline mx-auto mb-12' />
+
+          <p className='text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed text-center mb-16'>
+            Gristy Pharma is built on three pillars: customers, products, and
+            employees
+          </p>
 
           <div className='grid md:grid-cols-3 gap-8 mb-12'>
             {PurposeLists.map((pillar, index) => (
@@ -55,11 +58,13 @@ export default function CorePurposeSection() {
               >
                 <CardContent className='p-6'>
                   <div className='w-16 h-16 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
-                    <pillar.icon className='w-8 h-8 text-black' />
+                    <pillar.icon className='w-8 h-8 text-primary' />
                   </div>
-                  <h3 className='text-2xl font-bold text-primary mb-3'>
+
+                  <h3 className='text-2xl font-bold text-black mb-3'>
                     {pillar.title}
                   </h3>
+
                   <p className='text-muted-foreground leading-relaxed'>
                     {pillar.description}
                   </p>
@@ -71,12 +76,12 @@ export default function CorePurposeSection() {
           {/* Vision Statement */}
           <div className='bg-linear-to-br from-primary/5 to-primary/10 rounded-2xl p-12 text-center'>
             <Globe className='w-16 h-16 text-primary mx-auto mb-6' />
-            <h3 className='text-3xl lg:text-4xl font-bold text-primary mb-4'>
-              Our Vision
-            </h3>
+
+            <h3 className='text-3xl lg:text-4xl font-bold mb-4'>Our Vision</h3>
+
             <p className='text-xl lg:text-2xl text-foreground font-light leading-relaxed max-w-3xl mx-auto'>
               To be globally recognized as a{" "}
-              <span className='text-primary font-semibold'>
+              <span className='text-black font-semibold'>
                 reliable pharma export partner
               </span>
             </p>
@@ -85,32 +90,37 @@ export default function CorePurposeSection() {
       </section>
 
       {/* Quality & Excellence Section */}
-      <section className='py-20 bg-muted/30'>
+      <section className='py-10 md:py-20 bg-muted/30'>
         <div className='container'>
-          <div className='text-center mb-16'>
-            <h2 className='text-3xl lg:text-4xl font-bold text-primary mb-4'>
-              Excellence in Every Detail
-            </h2>
-            <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
-              Our commitment to quality drives everything we do
-            </p>
+          {/* Title */}
+          <div className='text-center mb-4 text-3xl md:text-4xl font-bold'>
+            Excellence in <span className='text-primary'>Every Detail</span>
           </div>
+
+          <div className='title_center_underline mx-auto mb-12' />
+
+          <p className='text-lg text-muted-foreground max-w-2xl mx-auto text-center mb-16'>
+            Our commitment to quality drives everything we do
+          </p>
 
           <div className='grid lg:grid-cols-2 gap-8'>
             {/* Passion for Excellence */}
             <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-linear-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='w-14 h-14 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
-                  <Shield className='w-7 h-7 text-black' />
+                  <Shield className='w-7 h-7 text-primary' />
                 </div>
-                <h3 className='text-2xl font-bold text-primary mb-4'>
+
+                <h3 className='text-2xl font-bold text-black mb-4'>
                   Our Passion for Excellence
                 </h3>
+
                 <p className='text-muted-foreground leading-relaxed mb-6'>
                   At Gristy Pharma, quality is at the core of everything we do.
                   We adhere to global standards and implement stringent quality
                   control measures at every stage of our operations.
                 </p>
+
                 <div className='bg-primary/5 rounded-lg p-4 border border-primary/10'>
                   <p className='text-sm text-foreground font-medium'>
                     Our robust Quality Management System (QMS) governs all
@@ -121,19 +131,22 @@ export default function CorePurposeSection() {
               </CardContent>
             </Card>
 
-            {/* Regulatory Assistant */}
+            {/* Regulatory Excellence */}
             <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-linear-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='w-14 h-14 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
-                  <Globe className='w-7 h-7 text-black' />
+                  <Globe className='w-7 h-7 text-primary' />
                 </div>
-                <h3 className='text-2xl font-bold text-primary mb-4'>
+
+                <h3 className='text-2xl font-bold text-black mb-4'>
                   Regulatory Excellence
                 </h3>
+
                 <p className='text-muted-foreground leading-relaxed mb-6'>
                   Our Regulatory Affairs team brings extensive expertise in
                   navigating global regulatory frameworks.
                 </p>
+
                 <div className='space-y-3'>
                   <div className='flex items-start gap-3'>
                     <CheckCircle2 className='w-5 h-5 text-primary mt-1 shrink-0' />
@@ -142,6 +155,7 @@ export default function CorePurposeSection() {
                       worldwide
                     </p>
                   </div>
+
                   <div className='flex items-start gap-3'>
                     <CheckCircle2 className='w-5 h-5 text-primary mt-1 shrink-0' />
                     <p className='text-sm text-foreground'>
@@ -152,27 +166,31 @@ export default function CorePurposeSection() {
               </CardContent>
             </Card>
 
-            {/* Quality Excellence Framework - Full Width */}
+            {/* Quality Excellence Framework */}
             <Card className='lg:col-span-2 group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-linear-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='flex flex-col lg:flex-row gap-8 items-start'>
                   <div className='w-14 h-14 rounded-md border flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300'>
-                    <Award className='w-7 h-7 text-black' />
+                    <Award className='w-7 h-7 text-primary' />
                   </div>
+
                   <div className='flex-1'>
-                    <h3 className='text-2xl font-bold text-primary mb-4'>
+                    <h3 className='text-2xl font-bold text-black mb-4'>
                       Quality Excellence Framework
                     </h3>
+
                     <p className='text-muted-foreground leading-relaxed mb-6'>
                       Delivering exceptional quality lies at the heart of our
                       operations. We implement rigorous quality control measures
                       throughout the entire product lifecycle, ensuring the
                       highest standards of safety, compliance, and reliability.
                     </p>
+
                     <div className='bg-linear-to-r from-primary/10 to-primary/5 rounded-lg p-6 border border-primary/20'>
                       <p className='text-foreground font-medium mb-2'>
                         Good Manufacturing Practices (GMP)
                       </p>
+
                       <p className='text-sm text-muted-foreground'>
                         Our steadfast adherence to Good Manufacturing Practices
                         (GMP) reflects our commitment to excellence and

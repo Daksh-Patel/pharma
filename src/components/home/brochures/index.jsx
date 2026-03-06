@@ -8,7 +8,8 @@ import { Download } from "lucide-react"
 
 const Brochures = () => {
   return (
-    <section className='relative w-full h-75 overflow-hidden'>
+    <section className='relative w-full py-20 overflow-hidden'>
+      {/* Background Image */}
       <Image
         src={BrochuresImage}
         alt='Brochure Image'
@@ -17,20 +18,40 @@ const Brochures = () => {
         className='object-cover'
       />
 
-      {/* Green Overlay */}
-      <div className='absolute inset-0 bg-[#28a745]/80'></div>
+      {/* Gradient Overlay */}
+      <div className='absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70' />
 
       {/* Content */}
-      <div className='absolute inset-0 flex items-center justify-between'>
-        <div className='container flex items-center justify-between'>
-          <h2 className='text-white text-3xl md:text-4xl font-semibold max-w-3xl leading-snug'>
-            Quality will keep us create strong bond with our customers. Quality
-            will make us spread Smile.
-          </h2>
+      <div className='relative z-10 container'>
+        <div className='flex flex-col lg:flex-row items-center justify-between gap-10'>
+          {/* Text */}
+          <div className='max-w-2xl text-center lg:text-left'>
+            <h2 className='text-white text-2xl sm:text-3xl lg:text-4xl font-semibold leading-snug mb-4'>
+              Quality will keep us create strong bond with our customers.
+            </h2>
 
-          <Button className='solidButton2 hover:bg-gray-800 h-14 w-87.5 text-xl transition flex items-center gap-3'>
+            <p className='text-white/90 text-lg'>
+              Quality will make us spread{" "}
+              <span className='font-semibold'>Smile.</span>
+            </p>
+          </div>
+
+          {/* Button */}
+          <Button
+            className='
+            bg-white text-primary
+            hover:bg-black hover:text-white
+            h-12 sm:h-14
+            px-6 sm:px-8
+            text-base sm:text-lg
+            rounded-md
+            flex items-center gap-3
+            shadow-xl
+            transition-all
+            '
+          >
             DOWNLOAD BROCHURES
-            <Download className='w-6! h-6! shrink-0' />
+            <Download className='w-5 h-5 sm:w-6 sm:h-6 shrink-0' />
           </Button>
         </div>
       </div>

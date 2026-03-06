@@ -4,34 +4,9 @@ import Image3 from "@/assets/images/banner_img3.png"
 
 export const productCategories = [
   {
-    title: "Cardiovascular",
-    slug: "cardiovascular",
-    bannerImages: [Image1, Image2],
-    products: [
-      {
-        id: 1,
-        name: "Lisinopril Tablets USP",
-        strength: "5 mg, 10 mg, 20 mg",
-        form: "Tablets",
-      },
-      {
-        id: 2,
-        name: "Losartan Potassium Tablets",
-        strength: "25 mg, 50 mg",
-        form: "Tablets",
-      },
-      {
-        id: 3,
-        name: "Ramipril Tablets",
-        strength: "1.25 mg, 2.5 mg, 5 mg",
-        form: "Tablets",
-      },
-    ],
-  },
-  {
     title: "Anti Diabetic",
     slug: "anti-diabetic",
-    bannerImages: [Image3],
+    bannerImages: [Image1, Image2],
     products: [
       {
         id: 1,
@@ -48,8 +23,27 @@ export const productCategories = [
     ],
   },
   {
-    title: "Anti Bacterial",
-    slug: "anti-bacterial",
+    title: "Oncology",
+    slug: "oncology",
+    bannerImages: [Image3],
+    products: [
+      {
+        id: 1,
+        name: "Imatinib Tablets",
+        strength: "100 mg, 400 mg",
+        form: "Tablets",
+      },
+      {
+        id: 2,
+        name: "Capecitabine Tablets",
+        strength: "500 mg",
+        form: "Tablets",
+      },
+    ],
+  },
+  {
+    title: "Antibiotics",
+    slug: "antibiotics",
     bannerImages: [Image1],
     products: [
       {
@@ -67,58 +61,60 @@ export const productCategories = [
     ],
   },
   {
-    title: "Anti Ulcer",
-    slug: "anti-ulcer",
+    title: "Anti Hypertensive",
+    slug: "anti-hypertensive",
     bannerImages: [Image3],
     products: [
       {
         id: 1,
-        name: "Omeprazole Capsules",
-        strength: "20 mg, 40 mg",
-        form: "Capsules",
+        name: "Amlodipine Tablets",
+        strength: "5 mg, 10 mg",
+        form: "Tablets",
+      },
+      {
+        id: 2,
+        name: "Losartan Tablets",
+        strength: "25 mg, 50 mg",
+        form: "Tablets",
       },
     ],
   },
   {
-    title: "Anti Fungal",
-    slug: "anti-fungal",
+    title: "Beta Lactum",
+    slug: "beta-lactum",
     bannerImages: [Image2, Image3],
     products: [
       {
         id: 1,
-        name: "Fluconazole Tablets",
-        strength: "150 mg",
+        name: "Cefixime Tablets",
+        strength: "200 mg",
         form: "Tablets",
+      },
+      {
+        id: 2,
+        name: "Ceftriaxone Injection",
+        strength: "1 gm",
+        form: "Injection",
       },
     ],
   },
   {
-    title: "Anti Allergic",
-    slug: "anti-allergic",
-    bannerImages: [Image3, Image1],
-    products: [
-      { id: 1, name: "Cetirizine Tablets", strength: "10 mg", form: "Tablets" },
-    ],
-  },
-  {
-    title: "Pain Management",
-    slug: "pain-management",
-    bannerImages: [Image2],
+    title: "Nutraceuticals",
+    slug: "nutraceuticals",
+    bannerImages: [Image3],
     products: [
       {
         id: 1,
-        name: "Paracetamol Tablets",
-        strength: "500 mg, 650 mg",
+        name: "Multivitamin Tablets",
+        strength: "N/A",
         form: "Tablets",
       },
-    ],
-  },
-  {
-    title: "Food Supplements And Nutraceutical Products",
-    slug: "nutraceutical",
-    bannerImages: [Image3],
-    products: [
-      { id: 1, name: "Multivitamin Tablets", strength: "N/A", form: "Tablets" },
+      {
+        id: 2,
+        name: "Calcium + Vitamin D3",
+        strength: "500 mg + 200 IU",
+        form: "Tablets",
+      },
     ],
   },
 ]

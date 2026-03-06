@@ -2,6 +2,8 @@
 
 import Image from "next/image"
 import React from "react"
+import CountUp from "react-countup"
+
 import BrochuresImage from "@/assets/images/brochures.png"
 
 import { User, Map, ClipboardList, Bike } from "lucide-react"
@@ -10,69 +12,100 @@ const stats = [
   {
     id: 1,
     icon: User,
-    value: "10+",
-    label: "YEARS OF EXPERIENCE",
+    value: 10,
+    suffix: "+",
+    label: "Years of Experience",
   },
   {
     id: 2,
     icon: Map,
-    value: "20+",
-    label: "COUNTRIES",
+    value: 20,
+    suffix: "+",
+    label: "Countries",
   },
   {
     id: 3,
     icon: ClipboardList,
-    value: "500+",
-    label: "DOSAGE FORMS",
+    value: 500,
+    suffix: "+",
+    label: "Dosage Forms",
   },
   {
     id: 4,
     icon: Bike,
-    value: "50+",
-    label: "HAPPY CLIENTS",
+    value: 50,
+    suffix: "+",
+    label: "Happy Clients",
   },
 ]
 
 const Services = () => {
   return (
-    <section className='relative w-full min-h-120 overflow-hidden'>
+    <section className='relative py-24 overflow-hidden'>
+      {/* Background */}
       <Image
         src={BrochuresImage}
-        alt='Brochure Image'
+        alt='Services Background'
         fill
         priority
         className='object-cover'
       />
 
-      {/* Green Overlay */}
-      <div className='absolute inset-0 bg-[#28a745]/70'></div>
+      {/* Overlay */}
+      <div className='absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70' />
 
       {/* Content */}
-      <div className='absolute w-full py-10 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>
+      <div className='relative z-10'>
         <div className='container'>
-          <h2 className='text-center mb-4 text-4xl font-bold text-white w-full'>
-            Services Delivered We Have Great Skills
-          </h2>
+          {/* Title */}
+          <div className='text-center mb-4 text-3xl md:text-4xl font-bold text-white'>
+            Services Delivered We Have{" "}
+            <span className='text-white'>Great Skills</span>
+          </div>
 
-          <div className='w-full mx-auto h-0.5 bg-[#ffffff] text-center max-w-37.5' />
+          <div className='w-28 h-[3px] bg-white mx-auto mb-16' />
 
-          <div className='grid grid-cols-4 gap-8 w-full mt-10'>
+          {/* Stats */}
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
             {stats.map((item) => {
               const Icon = item.icon
 
               return (
                 <div
                   key={item.id}
-                  className='border border-white p-10 text-center text-white
-                hover:bg-white/10 transition-all duration-300'
+                  className='
+                  backdrop-blur-md
+                  bg-white/10
+                  border border-white/20
+                  rounded-xl
+                  p-8
+                  text-center
+                  text-white
+                  hover:bg-white/20
+                  transition-all duration-300
+                  hover:-translate-y-1
+                  '
                 >
-                  <div className='flex justify-center mb-6'>
-                    <Icon size={40} strokeWidth={1.5} />
+                  {/* Icon */}
+                  <div className='w-14 h-14 mx-auto mb-5 rounded-full bg-white/20 flex items-center justify-center'>
+                    <Icon size={28} strokeWidth={2} />
                   </div>
 
-                  <h2 className='text-5xl font-bold mb-4'>{item.value}</h2>
+                  {/* Animated Number */}
+                  <h3 className='text-3xl md:text-4xl font-bold mb-2'>
+                    <CountUp
+                      end={item.value}
+                      duration={2}
+                      enableScrollSpy
+                      scrollSpyOnce
+                    />
+                    {item.suffix}
+                  </h3>
 
-                  <p className='tracking-wide text-lg'>{item.label}</p>
+                  {/* Label */}
+                  <p className='text-sm md:text-base tracking-wide'>
+                    {item.label}
+                  </p>
                 </div>
               )
             })}

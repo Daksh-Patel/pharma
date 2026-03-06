@@ -34,29 +34,42 @@ export default function Advertise() {
       loop: true,
       align: "start",
       slidesToScroll: 1,
-      dragFree: true, // smoother loop
+      dragFree: true,
     },
     [autoplay.current],
   )
 
   return (
     <section className='bg-gray-100 py-20'>
-      <div className='container mx-auto px-4'>
+      <div className='container'>
         <div className='overflow-hidden' ref={emblaRef}>
-          <div className='flex'>
+          <div className='flex items-center'>
             {AdvertiseList.map((item) => (
               <div
                 key={item.id}
-                className='flex-[0_0_20%] min-w-0 px-5 flex justify-center'
+                className='
+                flex-[0_0_50%]
+                sm:flex-[0_0_33.33%]
+                md:flex-[0_0_25%]
+                lg:flex-[0_0_20%]
+                min-w-0
+                px-4
+                flex justify-center
+                '
               >
-                <div className='group'>
+                <div className='group bg-white p-6 rounded-md shadow-sm hover:shadow-md transition'>
                   <Image
                     src={item.image}
                     alt='certification'
-                    width={210}
-                    height={135}
-                    className='object-contain transition-all duration-300
-                    grayscale group-hover:grayscale-0 group-hover:scale-110'
+                    width={180}
+                    height={120}
+                    className='
+                    object-contain
+                    transition-all duration-300
+                    grayscale
+                    group-hover:grayscale-0
+                    group-hover:scale-105
+                    '
                   />
                 </div>
               </div>

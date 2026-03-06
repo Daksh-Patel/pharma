@@ -3,7 +3,7 @@
 import Image from "next/image"
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 import ProductImage1 from "@/assets/images/Cinnerine.jpeg"
 import ProductImage2 from "@/assets/images/Gastroprazole-40.jpeg"
@@ -21,6 +21,8 @@ const products = [
 ]
 
 export default function OurRegisteredProduct() {
+  const [index, setIndex] = useState(0)
+
   const autoplay = useRef(
     Autoplay({
       delay: 2500,
@@ -37,8 +39,21 @@ export default function OurRegisteredProduct() {
     [autoplay.current],
   )
 
+  /* Update active dot when slide changes */
+  useEffect(() => {
+    if (!emblaApi) return
+
+    const onSelect = () => {
+      setIndex(emblaApi.selectedScrollSnap())
+    }
+
+    emblaApi.on("select", onSelect)
+    onSelect()
+  }, [emblaApi])
+
   const scrollPrev = () => emblaApi?.scrollPrev()
   const scrollNext = () => emblaApi?.scrollNext()
+  const scrollTo = (i) => emblaApi?.scrollTo(i)
 
   return (
     <section className='py-20 bg-gray-100'>
@@ -90,9 +105,15 @@ export default function OurRegisteredProduct() {
           {/* PREV */}
           <button
             onClick={scrollPrev}
-            className='absolute -left-20 top-1/2 -translate-y-1/2
+            className='
+            absolute -left-6 md:-left-10 lg:-left-14
+            top-1/2 -translate-y-1/2
             w-12 h-12 rounded-full border border-gray-300
-            flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all delay-75'
+            hidden items-center justify-center
+            hover:bg-primary hover:text-white hover:border-primary
+            transition-all
+            xl:flex
+            '
           >
             <ChevronLeft />
           </button>
@@ -100,12 +121,34 @@ export default function OurRegisteredProduct() {
           {/* NEXT */}
           <button
             onClick={scrollNext}
-            className='absolute -right-20 top-1/2 -translate-y-1/2
+            className='
+            absolute -right-6 md:-right-10 lg:-right-14
+            top-1/2 -translate-y-1/2
             w-12 h-12 rounded-full border border-gray-300
-            flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all delay-75'
+            hidden items-center justify-center
+            hover:bg-primary hover:text-white hover:border-primary
+            transition-all
+            xl:flex
+            '
           >
             <ChevronRight />
           </button>
+
+          {/* DOTS */}
+          <div className='absolute -bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-3'>
+            {products.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => scrollTo(i)}
+                aria-label={`Go to slide ${i + 1}`}
+                className={`h-2 md:h-3 rounded-full transition-all duration-300 ${
+                  i === index
+                    ? "bg-primary w-8 md:w-10"
+                    : "bg-foreground/30 hover:bg-foreground/50 w-2 md:w-3"
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

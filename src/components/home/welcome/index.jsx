@@ -7,7 +7,7 @@ import { CircleChevronRight } from "lucide-react"
 
 const WelcomeSection = () => {
   return (
-    <section className='py-20 bg-white relative welcome_section'>
+    <section className='py-14 md:py-20 bg-white relative'>
       <div className='container'>
         <div className='grid md:grid-cols-2 gap-12 items-center'>
           {/* LEFT IMAGE */}
@@ -22,11 +22,11 @@ const WelcomeSection = () => {
 
           {/* RIGHT CONTENT */}
           <div>
-            <h4 className='text-4xl font-semibold text-[#4b3b2f] mb-3'>
+            <h4 className='text-3xl md:text-4xl font-semibold text-[#4b3b2f] mb-3'>
               Welcome To
             </h4>
 
-            <h2 className='text-4xl font-bold text-primary mb-4'>
+            <h2 className='text-3xl md:text-4xl font-bold text-primary mb-4'>
               Gristy Pharma
             </h2>
 

@@ -34,47 +34,36 @@ export const HeaderMenuLists = [
     children: [
       {
         id: 31,
-        title: "Cardiovascular",
-        href: "/products/cardiovascular",
-      },
-      {
-        id: 32,
         title: "Anti Diabetic",
         href: "/products/anti-diabetic",
       },
       {
+        id: 32,
+        title: "Oncology",
+        href: "/products/oncology",
+      },
+      {
         id: 33,
-        title: "Anti Bacterial",
-        href: "/products/anti-bacterial",
+        title: "Antibiotics",
+        href: "/products/antibiotics",
       },
       {
         id: 34,
-        title: "Anti Ulcer",
-        href: "/products/anti-ulcer",
+        title: "Anti Hypertensive",
+        href: "/products/anti-hypertensive",
       },
       {
         id: 35,
-        title: "Anti Fungal",
-        href: "/products/anti-fungal",
+        title: "Beta Lactum",
+        href: "/products/beta-lactum",
       },
       {
         id: 36,
-        title: "Anti Allergic",
-        href: "/products/anti-allergic",
-      },
-      {
-        id: 37,
-        title: "Pain Management",
-        href: "/products/pain-management",
-      },
-      {
-        id: 38,
-        title: "Food Supplements And Nutraceutical Products",
-        href: "/products/nutraceutical",
+        title: "Nutraceuticals",
+        href: "/products/nutraceuticals",
       },
     ],
   },
-
   {
     id: 4,
     title: "Product Category",
@@ -116,7 +105,7 @@ export const HeaderMenuLists = [
   {
     id: 6,
     title: "Global Presence",
-    href: "/",
+    href: "/global-presence",
     children: [],
   },
   {
