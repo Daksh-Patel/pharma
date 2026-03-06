@@ -8,7 +8,7 @@ import MobileMenu from "./mobile-menu"
 
 const Header = () => {
   return (
-    <header className='py-4 sticky w-full top-2 bg-white border-b z-50'>
+    <header className='py-4 sticky w-full top-0 bg-white border-b z-50'>
       <div className='container'>
         <div className='flex items-center justify-between'>
           <Link href='/'>
