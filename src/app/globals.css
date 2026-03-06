@@ -189,8 +189,41 @@
 .container {
   width: 100%;
   max-width: 1470px;
-  padding: 0 130px;
   margin: 0 auto;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+/* Large screens */
+@media (max-width: 1280px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .menuLink {

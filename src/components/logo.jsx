@@ -9,9 +9,8 @@ const Logo = () => {
     <Image
       src={LogoImage}
       alt='Gristy Pharma Logo'
-      width={120} // adjust size
-      height={40}
       priority
+      className='w-24 sm:w-28 md:w-32 lg:w-36 h-auto'
     />
   )
 }
