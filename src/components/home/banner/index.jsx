@@ -152,7 +152,7 @@ export default function HomeBanner() {
           items-center justify-center
           transition-all duration-300
           border border-primary/20 hover:border-primary
-          group hidden md:flex'
+          group hidden lg:flex'
       >
         <svg
           width='24'
@@ -178,7 +178,7 @@ export default function HomeBanner() {
           w-12 h-12 md:w-14 md:h-14 rounded-full
           bg-foreground/10 hover:bg-primary/90
           backdrop-blur-md hidden
-          md:flex items-center justify-center
+          lg:flex items-center justify-center
           transition-all duration-300
           border border-primary/20 hover:border-primary
           group'

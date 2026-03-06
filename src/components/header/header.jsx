@@ -16,12 +16,12 @@ const Header = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className='hidden lg:block'>
+          <div className='hidden xl:block'>
             <HeaderMenu />
           </div>
 
           {/* Mobile Menu */}
-          <div className='lg:hidden'>
+          <div className='xl:hidden'>
             <MobileMenu />
           </div>
         </div>
