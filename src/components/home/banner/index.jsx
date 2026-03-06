@@ -149,10 +149,10 @@ export default function HomeBanner() {
           w-12 h-12 md:w-14 md:h-14 rounded-full
           bg-foreground/10 hover:bg-primary/90
           backdrop-blur-md
-          flex items-center justify-center
+          items-center justify-center
           transition-all duration-300
           border border-primary/20 hover:border-primary
-          group'
+          group hidden md:flex'
       >
         <svg
           width='24'
@@ -177,8 +177,8 @@ export default function HomeBanner() {
         className='absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30
           w-12 h-12 md:w-14 md:h-14 rounded-full
           bg-foreground/10 hover:bg-primary/90
-          backdrop-blur-md
-          flex items-center justify-center
+          backdrop-blur-md hidden
+          md:flex items-center justify-center
           transition-all duration-300
           border border-primary/20 hover:border-primary
           group'
