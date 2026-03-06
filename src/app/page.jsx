@@ -10,7 +10,7 @@ import OurProduct from "@/components/home/our-product"
 import GlobalPresence from "@/components/home/global-presence"
 import Services from "@/components/home/services"
 import Advertise from "@/components/home/advertise-slider"
-import LatestNews from "@/components/home/latest-news"
+import CorePurposeSection from "@/components/home/core-purpose"
 
 export default function Home() {
   return (
@@ -20,6 +20,8 @@ export default function Home() {
       <WelcomeSection />
 
       <NewArrivals />
+
+      <CorePurposeSection />
 
       <Brochures />
 
@@ -33,7 +35,7 @@ export default function Home() {
 
       <Advertise />
 
-      <LatestNews />
+      {/* <LatestNews /> */}
     </Suspense>
   )
 }
