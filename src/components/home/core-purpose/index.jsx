@@ -98,7 +98,7 @@ export default function CorePurposeSection() {
 
           <div className='grid lg:grid-cols-2 gap-8'>
             {/* Passion for Excellence */}
-            <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-gradient-to-br from-card to-primary/5 hover:-translate-y-1'>
+            <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-linear-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='w-14 h-14 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
                   <Shield className='w-7 h-7 text-black' />
@@ -122,7 +122,7 @@ export default function CorePurposeSection() {
             </Card>
 
             {/* Regulatory Assistant */}
-            <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-gradient-to-br from-card to-primary/5 hover:-translate-y-1'>
+            <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-linear-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='w-14 h-14 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
                   <Globe className='w-7 h-7 text-black' />
@@ -136,14 +136,14 @@ export default function CorePurposeSection() {
                 </p>
                 <div className='space-y-3'>
                   <div className='flex items-start gap-3'>
-                    <CheckCircle2 className='w-5 h-5 text-primary mt-1 flex-shrink-0' />
+                    <CheckCircle2 className='w-5 h-5 text-primary mt-1 shrink-0' />
                     <p className='text-sm text-foreground'>
                       Oversee product registrations across diverse markets
                       worldwide
                     </p>
                   </div>
                   <div className='flex items-start gap-3'>
-                    <CheckCircle2 className='w-5 h-5 text-primary mt-1 flex-shrink-0' />
+                    <CheckCircle2 className='w-5 h-5 text-primary mt-1 shrink-0' />
                     <p className='text-sm text-foreground'>
                       Ensure full compliance with international standards
                     </p>
@@ -153,10 +153,10 @@ export default function CorePurposeSection() {
             </Card>
 
             {/* Quality Excellence Framework - Full Width */}
-            <Card className='lg:col-span-2 group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-gradient-to-br from-card to-primary/5 hover:-translate-y-1'>
+            <Card className='lg:col-span-2 group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-linear-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='flex flex-col lg:flex-row gap-8 items-start'>
-                  <div className='w-14 h-14 rounded-md border flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300'>
+                  <div className='w-14 h-14 rounded-md border flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300'>
                     <Award className='w-7 h-7 text-black' />
                   </div>
                   <div className='flex-1'>
@@ -169,7 +169,7 @@ export default function CorePurposeSection() {
                       throughout the entire product lifecycle, ensuring the
                       highest standards of safety, compliance, and reliability.
                     </p>
-                    <div className='bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg p-6 border border-primary/20'>
+                    <div className='bg-linear-to-r from-primary/10 to-primary/5 rounded-lg p-6 border border-primary/20'>
                       <p className='text-foreground font-medium mb-2'>
                         Good Manufacturing Practices (GMP)
                       </p>
