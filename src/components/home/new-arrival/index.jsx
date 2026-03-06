@@ -70,7 +70,7 @@ export default function NewArrivals() {
         <div className='relative mt-10'>
           {/* Embla */}
           <div
-            className='overflow-hidden max-w-[1300px] mx-auto w-full'
+            className='overflow-hidden max-w-325 mx-auto w-full'
             ref={emblaRef}
           >
             <div className='flex gap-4'>

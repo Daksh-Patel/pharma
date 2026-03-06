@@ -52,7 +52,7 @@ const Services = () => {
       />
 
       {/* Overlay */}
-      <div className='absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70' />
+      <div className='absolute inset-0 bg-linear-to-r from-primary/90 via-primary/80 to-primary/70' />
 
       {/* Content */}
       <div className='relative z-10'>
@@ -63,7 +63,7 @@ const Services = () => {
             <span className='text-white'>Great Skills</span>
           </div>
 
-          <div className='w-28 h-[3px] bg-white mx-auto mb-16' />
+          <div className='w-28 h-0.75 bg-white mx-auto mb-16' />
 
           {/* Stats */}
           <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
