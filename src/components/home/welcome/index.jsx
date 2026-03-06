@@ -34,14 +34,16 @@ const WelcomeSection = () => {
             <div className='title_underline'></div>
 
             <p className='text-gray-600 leading-8 mb-6'>
-              Gristy Pharma is one of the leading companies of India working
-              with a wide range of products of orals, liquids and injectables.
-              An integrated healthcare solutions provider with pharmaceutical
-              product basket, it caters to over 250+ therapeutic products, 7+
-              formulations that include cardiovascular, gastrointestinal,
-              analgesics, haematinics, anti-infectives and antibiotics,
-              respiratory agents, antidiabetics and immunologicals collaborating
-              with 7+ Countries.
+              Gristy Pharma is one of India’s leading pharmaceutical companies,
+              offering a comprehensive range of oral, liquid, and injectable
+              formulations. As an integrated healthcare solutions provider, the
+              company delivers a diverse portfolio of over 300 therapeutic
+              products across more than seven key formulation categories,
+              including cardiovascular, gastrointestinal, analgesics,
+              haematinics, anti-infectives and antibiotics, respiratory agents,
+              antidiabetics, and immunologicals. With a strong global presence,
+              Gristy Pharma collaborates with partners in over seven countries,
+              reinforcing its commitment to quality healthcare worldwide.
             </p>
 
             <Button className='solidButton'>

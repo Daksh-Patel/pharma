@@ -2,55 +2,43 @@
 
 import Image from "next/image"
 import React from "react"
-import ProductImage1 from "@/assets/images/Cardiovascular1-110x110.png"
 import ProductImage2 from "@/assets/images/Anti-Diabetic-110x110.png"
 import ProductImage3 from "@/assets/images/Anti-Bacterial-110x110.png"
 import ProductImage4 from "@/assets/images/Anti-Ulce-110x110.png"
 import ProductImage5 from "@/assets/images/Anti-Fungal-110x110.png"
 import ProductImage6 from "@/assets/images/Anti-Allergic-110x110.png"
 import ProductImage7 from "@/assets/images/Pain-Management-110x110.png"
-import ProductImage8 from "@/assets/images/Food-Nutra-Products-110x110.png"
 
 const ProductList = [
   {
-    id: 1,
-    title: "Cardiovascular",
-    image: ProductImage1,
-  },
-  {
     id: 2,
-    title: "Antidiabetic",
+    title: "Anti diabetic",
     image: ProductImage2,
   },
   {
     id: 3,
-    title: "Anti Bacterial",
+    title: "oncology",
     image: ProductImage3,
   },
   {
     id: 4,
-    title: "Anti Ulcer",
+    title: "antibiotics",
     image: ProductImage4,
   },
   {
     id: 5,
-    title: "Anti Fungal",
+    title: "anti hypertensive",
     image: ProductImage5,
   },
   {
     id: 6,
-    title: "Anti Allergic",
+    title: "beta lactum",
     image: ProductImage6,
   },
   {
     id: 7,
-    title: "Pain Management",
+    title: "nutraceuticals",
     image: ProductImage7,
-  },
-  {
-    id: 8,
-    title: "Food Supplements And Nutraceutical",
-    image: ProductImage8,
   },
 ]
 
@@ -81,7 +69,7 @@ const OurProduct = () => {
                   priority
                 />
               </div>
-              <p className='mt-4 text-lg font-bold text-primary text-center'>
+              <p className='mt-4 text-lg font-bold text-primary text-center capitalize'>
                 {product.title}
               </p>
             </div>
