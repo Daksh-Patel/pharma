@@ -36,7 +36,7 @@ export default function CorePurposeSection() {
     <div className='min-h-screen bg-background'>
       {/* Core Pillars Section */}
       <section className='py-20'>
-        <div className='max-w-7xl mx-auto px-6'>
+        <div className='container'>
           <div className='text-center mb-16'>
             <h2 className='text-3xl lg:text-4xl font-bold text-primary mb-4'>
               Our Core Purpose & Future Vision
@@ -86,9 +86,9 @@ export default function CorePurposeSection() {
 
       {/* Quality & Excellence Section */}
       <section className='py-20 bg-muted/30'>
-        <div className='max-w-7xl mx-auto px-6'>
+        <div className='container'>
           <div className='text-center mb-16'>
-            <h2 className='text-4xl lg:text-5xl font-bold text-primary mb-4'>
+            <h2 className='text-3xl lg:text-4xl font-bold text-primary mb-4'>
               Excellence in Every Detail
             </h2>
             <p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
@@ -100,8 +100,8 @@ export default function CorePurposeSection() {
             {/* Passion for Excellence */}
             <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-gradient-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
-                <div className='w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
-                  <Shield className='w-7 h-7 text-primary' />
+                <div className='w-14 h-14 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
+                  <Shield className='w-7 h-7 text-black' />
                 </div>
                 <h3 className='text-2xl font-bold text-primary mb-4'>
                   Our Passion for Excellence
@@ -124,8 +124,8 @@ export default function CorePurposeSection() {
             {/* Regulatory Assistant */}
             <Card className='group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-gradient-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
-                <div className='w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
-                  <Globe className='w-7 h-7 text-primary' />
+                <div className='w-14 h-14 rounded-md border flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300'>
+                  <Globe className='w-7 h-7 text-black' />
                 </div>
                 <h3 className='text-2xl font-bold text-primary mb-4'>
                   Regulatory Excellence
@@ -156,8 +156,8 @@ export default function CorePurposeSection() {
             <Card className='lg:col-span-2 group hover:shadow-2xl transition-all duration-500 border-primary/20 bg-gradient-to-br from-card to-primary/5 hover:-translate-y-1'>
               <CardContent className='p-10'>
                 <div className='flex flex-col lg:flex-row gap-8 items-start'>
-                  <div className='w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300'>
-                    <Award className='w-7 h-7 text-primary' />
+                  <div className='w-14 h-14 rounded-md border flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300'>
+                    <Award className='w-7 h-7 text-black' />
                   </div>
                   <div className='flex-1'>
                     <h3 className='text-2xl font-bold text-primary mb-4'>
