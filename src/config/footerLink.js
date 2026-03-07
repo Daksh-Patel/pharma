@@ -1,42 +1,32 @@
 export const ProductCategories = [
   {
-    id: 1,
-    title: "Cardiovascular",
-    href: "/products/cardiovascular",
-  },
-  {
-    id: 2,
+    id: 31,
     title: "Anti Diabetic",
     href: "/products/anti-diabetic",
   },
   {
-    id: 3,
-    title: "Anti Bacterial",
-    href: "/products/anti-bacterial",
+    id: 32,
+    title: "Oncology",
+    href: "/products/oncology",
   },
   {
-    id: 4,
-    title: "Anti Ulcer",
-    href: "/products/anti-ulcer",
+    id: 33,
+    title: "Antibiotics",
+    href: "/products/antibiotics",
   },
   {
-    id: 5,
-    title: "Anti Fungal",
-    href: "/products/anti-fungal",
+    id: 34,
+    title: "Anti Hypertensive",
+    href: "/products/anti-hypertensive",
   },
   {
-    id: 6,
-    title: "Anti Allergic",
-    href: "/products/anti-allergic",
+    id: 35,
+    title: "Beta Lactum",
+    href: "/products/beta-lactum",
   },
   {
-    id: 7,
-    title: "Pain Management",
-    href: "/products/pain-management",
-  },
-  {
-    id: 8,
-    title: "Food Supplements And Neutraceutical products",
-    href: "/products/food-supplements",
+    id: 36,
+    title: "Nutraceuticals",
+    href: "/products/nutraceuticals",
   },
 ]
