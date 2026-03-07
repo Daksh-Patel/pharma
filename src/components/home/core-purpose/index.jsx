@@ -33,7 +33,7 @@ const PurposeLists = [
 
 export default function CorePurposeSection() {
   return (
-    <div className='bg-background'>
+    <div className='bg-gray-100'>
       {/* Core Pillars Section */}
       <section className='py-14 md:py-20'>
         <div className='container'>

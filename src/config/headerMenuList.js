@@ -15,11 +15,11 @@ export const HeaderMenuLists = [
         title: "Our Profile",
         href: "/profile",
       },
-      {
-        id: 12,
-        title: "Leadership",
-        href: "/leadership",
-      },
+      // {
+      //   id: 12,
+      //   title: "Leadership",
+      //   href: "/leadership",
+      // },
       {
         id: 13,
         title: "Quality Policy",
@@ -105,15 +105,15 @@ export const HeaderMenuLists = [
   {
     id: 6,
     title: "Global Presence",
-    href: "/global-presence",
+    href: "/#globalPresence",
     children: [],
   },
-  {
-    id: 7,
-    title: "Careers",
-    href: "/career",
-    children: [],
-  },
+  // {
+  //   id: 7,
+  //   title: "Careers",
+  //   href: "/career",
+  //   children: [],
+  // },
   {
     id: 8,
     title: "Contact Us",

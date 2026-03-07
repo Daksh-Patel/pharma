@@ -2,12 +2,12 @@
 
 import Image from "next/image"
 import WelcomeImage from "@/assets/images/welcome.jpg"
-import { Button } from "@/tailwind-components/ui/button"
-import { CircleChevronRight } from "lucide-react"
+// import { Button } from "@/tailwind-components/ui/button"
+// import { CircleChevronRight } from "lucide-react"
 
 const WelcomeSection = () => {
   return (
-    <section className='py-14 md:py-20 bg-white relative'>
+    <section className='py-14 md:py-20 bg-gray-100 relative'>
       <div className='container'>
         <div className='grid md:grid-cols-2 gap-12 items-center'>
           {/* LEFT IMAGE */}
@@ -46,9 +46,9 @@ const WelcomeSection = () => {
               reinforcing its commitment to quality healthcare worldwide.
             </p>
 
-            <Button className='solidButton'>
+            {/* <Button className='solidButton'>
               READ MORE <CircleChevronRight />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

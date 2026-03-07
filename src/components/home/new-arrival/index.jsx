@@ -5,21 +5,23 @@ import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import { useRef, useState, useEffect } from "react"
 
-import ProductImage1 from "@/assets/images/Cinnerine.jpeg"
-import ProductImage2 from "@/assets/images/Gastroprazole-40.jpeg"
-import ProductImage3 from "@/assets/images/KINRAB.jpeg"
-import ProductImage4 from "@/assets/images/PIP-Injection.jpeg"
-import ProductImage5 from "@/assets/images/Val-S-200-2.jpg"
+import ProductImage1 from "@/assets/images/cafixime.png"
+import ProductImage2 from "@/assets/images/gristy_cv6251.png"
+import ProductImage3 from "@/assets/images/cefpodoxime.png"
+import ProductImage4 from "@/assets/images/methylcobalamin1.png"
+import ProductImage5 from "@/assets/images/aceclofenac.png"
+import ProductImage6 from "@/assets/images/esomeprazole.png"
 
-import { ChevronLeft, ChevronRight, CircleChevronRight } from "lucide-react"
-import { Button } from "@/tailwind-components/ui/button"
+import { ChevronLeft, ChevronRight } from "lucide-react"
+// import { Button } from "@/tailwind-components/ui/button"
 
 const products = [
-  { image: ProductImage1, title: "Cinnerine" },
-  { image: ProductImage2, title: "Gastroprazole-40" },
-  { image: ProductImage3, title: "Kinrab" },
-  { image: ProductImage4, title: "PIP Injection" },
-  { image: ProductImage5, title: "Val-S 200" },
+  { image: ProductImage1, title: "Cefosty-Plus" },
+  { image: ProductImage2, title: "Gristy-CV 625" },
+  { image: ProductImage3, title: "GR POD" },
+  { image: ProductImage4, title: "12Vita-MD" },
+  { image: ProductImage5, title: "GM-Para SP" },
+  { image: ProductImage6, title: "Esysty-DSR" },
 ]
 
 export default function NewArrivals() {
@@ -41,7 +43,6 @@ export default function NewArrivals() {
     [autoplay.current],
   )
 
-  /* Update active dot when slide changes */
   useEffect(() => {
     if (!emblaApi) return
 
@@ -58,7 +59,7 @@ export default function NewArrivals() {
   const scrollTo = (i) => emblaApi?.scrollTo(i)
 
   return (
-    <section className='py-14 md:py-20 bg-gray-100'>
+    <section className='py-14 md:py-20 bg-white'>
       <div className='container'>
         {/* Title */}
         <div className='text-center mb-4 text-3xl md:text-4xl font-bold'>
@@ -73,20 +74,14 @@ export default function NewArrivals() {
             className='overflow-hidden max-w-325 mx-auto w-full'
             ref={emblaRef}
           >
-            <div className='flex gap-4'>
+            <div className='flex -mx-2'>
               {products.map((product, i) => (
                 <div
                   key={i}
-                  className='
-                  flex-[0_0_100%]
-                  sm:flex-[0_0_50%]
-                  md:flex-[0_0_33.33%]
-                  lg:flex-[0_0_25%]
-                  min-w-0
-                  '
+                  className='flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.33%] lg:flex-[0_0_25%] min-w-0 px-2'
                 >
-                  <div className='bg-white p-4 rounded-md shadow-sm hover:shadow-md transition'>
-                    <div className='relative w-full h-64 md:h-72'>
+                  <div className='bg-gray-100 p-4 rounded-md shadow-sm hover:shadow-md transition'>
+                    <div className='relative w-full h-60'>
                       <Image
                         src={product.image}
                         alt={product.title}
@@ -95,7 +90,7 @@ export default function NewArrivals() {
                       />
                     </div>
 
-                    <h2 className='mt-4 text-lg font-bold text-center'>
+                    <h2 className='mt-2 text-lg font-bold text-center'>
                       {product.title}
                     </h2>
                   </div>
@@ -107,15 +102,7 @@ export default function NewArrivals() {
           {/* PREV */}
           <button
             onClick={scrollPrev}
-            className='
-            absolute -left-6 md:-left-10 lg:-left-14
-            top-1/2 -translate-y-1/2
-            w-12 h-12 rounded-full border border-gray-300
-            hidden items-center justify-center
-            hover:bg-primary hover:text-white hover:border-primary
-            transition-all
-            xl:flex
-            '
+            className='absolute -left-6 md:-left-10 lg:-left-14 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-gray-300 hidden items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all xl:flex'
           >
             <ChevronLeft />
           </button>
@@ -123,15 +110,7 @@ export default function NewArrivals() {
           {/* NEXT */}
           <button
             onClick={scrollNext}
-            className='
-            absolute -right-6 md:-right-10 lg:-right-14
-            top-1/2 -translate-y-1/2
-            w-12 h-12 rounded-full border border-gray-300
-            hidden items-center justify-center
-            hover:bg-primary hover:text-white hover:border-primary
-            transition-all
-            xl:flex
-            '
+            className='absolute -right-6 md:-right-10 lg:-right-14 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full border border-gray-300 hidden items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all xl:flex'
           >
             <ChevronRight />
           </button>
@@ -142,7 +121,6 @@ export default function NewArrivals() {
               <button
                 key={i}
                 onClick={() => scrollTo(i)}
-                aria-label={`Go to slide ${i + 1}`}
                 className={`h-2 md:h-3 rounded-full transition-all duration-300 ${
                   i === index
                     ? "bg-primary w-8 md:w-10"
@@ -154,11 +132,11 @@ export default function NewArrivals() {
         </div>
 
         {/* Read More */}
-        <div className='flex items-center justify-center'>
+        {/* <div className='flex items-center justify-center'>
           <Button className='solidButton mt-16 rounded-sm' size='lg'>
             Read More <CircleChevronRight />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   )

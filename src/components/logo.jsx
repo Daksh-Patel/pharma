@@ -10,7 +10,7 @@ const Logo = () => {
       src={LogoImage}
       alt='Gristy Pharma Logo'
       priority
-      className='w-24 sm:w-28 md:w-32 lg:w-36 h-auto'
+      className='w-20 sm:w-24 md:w-24 h-auto'
     />
   )
 }

@@ -4,6 +4,7 @@ import Image from "next/image"
 import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import { useRef } from "react"
+import { useRouter } from "next/navigation"
 
 import {
   Table,
@@ -17,6 +18,7 @@ import { Button } from "@/tailwind-components/ui/button"
 import { Send } from "lucide-react"
 
 export default function ProductCategoryClient({ category }) {
+  const router = useRouter()
   const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }))
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -29,6 +31,10 @@ export default function ProductCategoryClient({ category }) {
 
   const scrollNext = () => {
     emblaApi?.scrollNext()
+  }
+
+  const handleRouteContactUs = () => {
+    router.push("/contact")
   }
 
   return (
@@ -100,7 +106,10 @@ export default function ProductCategoryClient({ category }) {
         </TableBody>
       </Table>
 
-      <Button className={"mt-5 flex w-full ml-auto max-w-40"}>
+      <Button
+        className={"mt-5 flex w-full ml-auto max-w-40"}
+        onClick={handleRouteContactUs}
+      >
         Send Inquiry <Send />
       </Button>
     </div>

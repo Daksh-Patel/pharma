@@ -6,7 +6,7 @@ import NewArrivals from "@/components/home/new-arrival"
 import { Suspense } from "react"
 import Brochures from "@/components/home/brochures"
 import OurRegisteredProduct from "@/components/home/registered-product"
-import OurProduct from "@/components/home/our-product"
+// import OurProduct from "@/components/home/our-product"
 import GlobalPresence from "@/components/home/global-presence"
 import Services from "@/components/home/services"
 import Advertise from "@/components/home/advertise-slider"
@@ -27,7 +27,7 @@ export default function Home() {
 
       <OurRegisteredProduct />
 
-      <OurProduct />
+      {/* <OurProduct /> */}
 
       <GlobalPresence />
 

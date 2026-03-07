@@ -16,56 +16,31 @@ export default function Footer() {
 
             <div className='space-y-6 mt-6 text-sm'>
               <div>
-                <p className='font-semibold'>Mr. John Doe</p>
+                <p className='font-semibold'>Mr. Bhavesh</p>
                 <p className='text-white/80'>Director : Software Development</p>
                 <p>
                   <span className='font-semibold'>M :</span>{" "}
                   <Link
-                    href='tel:+911234567890'
+                    href='tel:+918780867942'
                     className='hover:underline transition'
                   >
-                    +91 12345 67890
+                    +91 87808 67942
                   </Link>{" "}
                   /{" "}
                   <Link
-                    href='tel:+911234567890'
+                    href='tel:+919664667942'
                     className='hover:underline transition'
                   >
-                    +91 12345 67890
+                    +91 96646 67942
                   </Link>
                 </p>
                 <p>
                   <span className='font-semibold'>E :</span>{" "}
                   <Link
-                    href='mailto:test@gmail.com'
+                    href='mailto:info@gristypharma.com'
                     className='hover:underline transition'
                   >
-                    test@gmail.com
-                  </Link>
-                </p>
-              </div>
-
-              <div>
-                <p className='font-semibold'>Mr. John Doe</p>
-                <p className='text-white/80'>
-                  Administration and Finance Department
-                </p>
-                <p>
-                  <span className='font-semibold'>M :</span>{" "}
-                  <Link
-                    href='tel:+911234567890'
-                    className='hover:underline transition'
-                  >
-                    +91 12345 67890
-                  </Link>{" "}
-                </p>
-                <p>
-                  <span className='font-semibold'>E :</span>{" "}
-                  <Link
-                    href='mailto:test@gmail.com'
-                    className='hover:underline transition'
-                  >
-                    test@gmail.com
+                    info@gristypharma.com
                   </Link>
                 </p>
               </div>
@@ -80,11 +55,12 @@ export default function Footer() {
               <div>
                 <p className='font-semibold'>ADDRESS</p>
                 <p className='text-white/80 leading-relaxed'>
-                  123, 4th Floor, Skyline Business Center,
+                  Gristy Pharma Pvt Ltd
                   <br />
-                  SG Highway, Satellite,
+                  F-105, Shreem Maxima, Near National Handloom, Opp. Angle
+                  Arcade, Nikol,
                   <br />
-                  Ahmedabad-380015, Gujarat, India
+                  Ahmedabad, Gujarat, India
                 </p>
               </div>
 
@@ -92,15 +68,15 @@ export default function Footer() {
                 <p className='font-semibold'>EMAIL</p>
                 <p className='text-white/80'>
                   <Link
-                    href='mailto:test@gmail.com'
+                    href='mailto:info@gristypharma.com'
                     className='hover:underline transition'
                   >
-                    test@gmail.com
+                    info@gristypharma.com
                   </Link>
                 </p>
               </div>
 
-              <div>
+              {/* <div>
                 <p className='font-semibold'>WEBSITE</p>
                 <p className='text-white/80'>
                   <Link
@@ -111,7 +87,7 @@ export default function Footer() {
                     www.google.com
                   </Link>
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -140,7 +116,7 @@ export default function Footer() {
         <div className='max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-2'>
           <p className='uppercase'>
             COPYRIGHT © 2026{" "}
-            <span className='font-semibold'>COMPANY NAME.</span> ALL RIGHTS
+            <span className='font-semibold'>Gristy Pharma.</span> ALL RIGHTS
             RESERVED.
           </p>
         </div>

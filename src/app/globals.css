@@ -177,6 +177,7 @@
   * {
     @apply border-border outline-ring/50;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;

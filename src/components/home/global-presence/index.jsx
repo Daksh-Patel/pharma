@@ -102,7 +102,7 @@ const GlobalPresence = () => {
   const activeCountry = countries.find((c) => c.id === active)
 
   return (
-    <section className='py-20 bg-gray-100'>
+    <section className='py-20 bg-white' id='globalPresence'>
       <div className='container'>
         {/* Title */}
         <div className='text-center mb-4 text-3xl md:text-4xl font-bold'>

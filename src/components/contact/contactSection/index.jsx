@@ -29,61 +29,38 @@ export default function ContactSection() {
 
             <div className='space-y-6 text-gray-700'>
               <h3 className='text-xl font-semibold text-black'>
-                Gristy Pharmaceuticals
+                Gristy Pharma
               </h3>
 
               {/* Contact Person */}
               <div className='space-y-1'>
-                <p className='font-bold'>Mrs. John</p>
-                <p>Director</p>
+                <p className='font-bold'>Mr. Bhavesh</p>
 
                 {/* Phone */}
                 <div>
                   <Link
-                    href='tel:1234567890'
-                    className='inline-flex items-center gap-2 hover:text-primary transition'
+                    href='tel:+918780867942'
+                    className='hover:underline transition'
                   >
-                    <Phone size={18} />
-                    1234567890
+                    +91 87808 67942
+                  </Link>{" "}
+                  /{" "}
+                  <Link
+                    href='tel:+919664667942'
+                    className='hover:underline transition'
+                  >
+                    +91 96646 67942
                   </Link>
                 </div>
 
                 {/* Email */}
                 <div>
                   <Link
-                    href='mailto:test@gmail.com'
+                    href='mailto:info@gristypharma.com'
                     className='inline-flex items-center gap-2 hover:text-primary transition'
                   >
                     <Mail size={18} />
-                    test@gmail.com
-                  </Link>
-                </div>
-              </div>
-
-              <div className='space-y-1'>
-                <p className='font-bold'>Mrs. Doe</p>
-                <p>Director</p>
-
-                {/* Phone */}
-
-                <div>
-                  <Link
-                    href='tel:1234567890'
-                    className='inline-flex items-center gap-2 hover:text-primary transition'
-                  >
-                    <Phone size={18} />
-                    1234567890
-                  </Link>
-                </div>
-
-                {/* Email */}
-                <div>
-                  <Link
-                    href='mailto:test@gmail.com'
-                    className='inline-flex items-center gap-2 hover:text-primary transition'
-                  >
-                    <Mail size={18} />
-                    test@gmail.com
+                    info@gristypharma.com
                   </Link>
                 </div>
               </div>
@@ -95,25 +72,11 @@ export default function ContactSection() {
                 <div className='flex items-start gap-2'>
                   <MapPin size={18} className='mt-1' />
                   <span>
-                    705-706, 7th Floor, Skyline Tower, <br />
-                    SG Highway, Ahmedabad - 380015, <br />
-                    Gujarat, India
+                    Gristy Pharma Pvt Ltd F-105, Shreem Maxima, <br /> Near
+                    National Handloom, Opp. Angle Arcade, <br /> Nikol,
+                    Ahmedabad
                   </span>
                 </div>
-              </div>
-
-              {/* Website */}
-              <div className='space-y-2'>
-                <p className='font-semibold'>Website</p>
-
-                <Link
-                  href='https://example.com'
-                  target='_blank'
-                  className='inline-flex items-center gap-2 hover:text-primary transition'
-                >
-                  <Globe size={18} />
-                  www.example.com
-                </Link>
               </div>
             </div>
           </div>

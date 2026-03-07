@@ -5,19 +5,21 @@ import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import { useEffect, useRef, useState } from "react"
 
-import ProductImage1 from "@/assets/images/Cinnerine.jpeg"
-import ProductImage2 from "@/assets/images/Gastroprazole-40.jpeg"
-import ProductImage3 from "@/assets/images/KINRAB.jpeg"
-import ProductImage4 from "@/assets/images/PIP-Injection.jpeg"
-import ProductImage5 from "@/assets/images/Val-S-200-2.jpg"
+import ProductImage1 from "@/assets/images/cafixime.png"
+import ProductImage2 from "@/assets/images/gristy_cv6251.png"
+import ProductImage3 from "@/assets/images/cefpodoxime.png"
+import ProductImage4 from "@/assets/images/methylcobalamin1.png"
+import ProductImage5 from "@/assets/images/aceclofenac.png"
+import ProductImage6 from "@/assets/images/esomeprazole.png"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const products = [
-  { image: ProductImage1, title: "Product 1" },
-  { image: ProductImage2, title: "Product 2" },
-  { image: ProductImage3, title: "Product 3" },
-  { image: ProductImage4, title: "Product 4" },
-  { image: ProductImage5, title: "Product 5" },
+  { image: ProductImage1, title: "Cefosty-Plus" },
+  { image: ProductImage2, title: "Gristy-CV 625" },
+  { image: ProductImage3, title: "GR POD" },
+  { image: ProductImage4, title: "12Vita-MD" },
+  { image: ProductImage5, title: "GM-Para SP" },
+  { image: ProductImage6, title: "Esysty-DSR" },
 ]
 
 export default function OurRegisteredProduct() {
@@ -71,7 +73,7 @@ export default function OurRegisteredProduct() {
             className='overflow-hidden max-w-325 mx-auto w-full'
             ref={emblaRef}
           >
-            <div className='flex gap-3'>
+            <div className='flex -mx-2'>
               {products.map((product, index) => (
                 <div
                   key={index}
@@ -81,10 +83,11 @@ export default function OurRegisteredProduct() {
                   md:flex-[0_0_33.33%]
                   lg:flex-[0_0_25%]
                   min-w-0
+                  px-4
                   '
                 >
                   <div className=''>
-                    <div className='relative w-full h-67.5'>
+                    <div className='relative w-full h-60'>
                       <Image
                         src={product.image}
                         alt={product.title}

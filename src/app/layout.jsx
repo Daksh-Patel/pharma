@@ -2,7 +2,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header/header"
 import Footer from "@/components/footer/footer"
-import SocialSidebar from "@/components/socialSidebar"
+// import SocialSidebar from "@/components/socialSidebar"
 import { TooltipProvider } from "@/tailwind-components/ui/tooltip"
 import WhatsappFloat from "@/components/whatsappFloat"
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <TooltipProvider>
           {" "}
           <Header />
-          <SocialSidebar />
+          {/* <SocialSidebar /> */}
           {children}
           <Footer />
           <WhatsappFloat />
