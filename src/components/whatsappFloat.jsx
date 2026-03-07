@@ -4,7 +4,7 @@ import Link from "next/link"
 import { CustomTooltip } from "./customTooltip"
 
 export default function WhatsappFloat() {
-  const phoneNumber = "911234567890"
+  const phoneNumber = "+918780867942"
   const message = "Hello, I want to enquire"
 
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
