@@ -17,7 +17,6 @@ export default function Footer() {
             <div className='space-y-6 mt-6 text-sm'>
               <div>
                 <p className='font-semibold'>Mr. Bhavesh</p>
-                <p className='text-white/80'>Director : Software Development</p>
                 <p>
                   <span className='font-semibold'>M :</span>{" "}
                   <Link
