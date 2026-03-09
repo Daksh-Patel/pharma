@@ -28,7 +28,7 @@ export default function ContactSection() {
           ${data.message}
         `
 
-    const mailtoLink = `mailto:dakshpatel1520@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:info@gristypharma.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`
 
