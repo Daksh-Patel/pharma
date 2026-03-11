@@ -150,7 +150,8 @@ const GlobalPresence = () => {
         {/* Content */}
         <div className='bg-white rounded-xl shadow-md mt-10 p-8'>
           <h3 className='text-xl font-bold mb-6 text-center'>
-            Export Markets for {activeCountry?.name}
+            Export Markets for <br />
+            {activeCountry?.name}
           </h3>
 
           <div className='flex flex-wrap justify-center gap-3'>

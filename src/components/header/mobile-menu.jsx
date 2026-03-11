@@ -45,6 +45,7 @@ const MobileMenu = () => {
                 <Link
                   key={menu.id}
                   href={menu.href}
+                  onClick={() => setOpen(false)}
                   className='block text-sm font-semibold uppercase py-2 border-b hover:text-primary transition'
                 >
                   {menu.title}
@@ -64,6 +65,7 @@ const MobileMenu = () => {
                     <Link
                       key={child.id}
                       href={child.href}
+                      onClick={() => setOpen(false)}
                       className='block text-sm text-muted-foreground hover:text-primary transition'
                     >
                       {child.title}

@@ -96,12 +96,12 @@ export const HeaderMenuLists = [
       },
     ],
   },
-  {
-    id: 5,
-    title: "Who-Gmp",
-    href: "/who-gmp",
-    children: [],
-  },
+  // {
+  //   id: 5,
+  //   title: "Who-Gmp",
+  //   href: "/who-gmp",
+  //   children: [],
+  // },
   {
     id: 6,
     title: "Global Presence",

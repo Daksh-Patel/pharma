@@ -6,11 +6,10 @@ import Autoplay from "embla-carousel-autoplay"
 import React, { useRef } from "react"
 
 import AddImage1 from "@/assets/images/iso-9001-grey.jpg"
-import AddImage2 from "@/assets/images/iso-9001-grey.jpg"
-import AddImage3 from "@/assets/images/iso-9001-grey.jpg"
-import AddImage4 from "@/assets/images/iso-9001-grey.jpg"
+import AddImage2 from "@/assets/images/who-gmp-grey.jpg"
+import AddImage3 from "@/assets/images/gmp-certfice-grey.jpg"
+import AddImage4 from "@/assets/images/usfda.png"
 import AddImage5 from "@/assets/images/iso-9001-grey.jpg"
-import AddImage6 from "@/assets/images/iso-9001-grey.jpg"
 
 const AdvertiseList = [
   { id: 1, image: AddImage1 },
@@ -18,7 +17,7 @@ const AdvertiseList = [
   { id: 3, image: AddImage3 },
   { id: 4, image: AddImage4 },
   { id: 5, image: AddImage5 },
-  { id: 6, image: AddImage6 },
+  { id: 6, image: AddImage2 },
 ]
 
 export default function Advertise() {
@@ -57,13 +56,14 @@ export default function Advertise() {
                 flex justify-center
                 '
               >
-                <div className='group bg-white p-6 rounded-md shadow-sm hover:shadow-md transition'>
+                <div className='group bg-white p-6 max-h-38 rounded-md shadow-sm hover:shadow-md transition'>
                   <Image
                     src={item.image}
                     alt='certification'
                     width={180}
-                    height={120}
+                    height={100}
                     className='
+                    max-h-30
                     object-contain
                     transition-all duration-300
                     grayscale

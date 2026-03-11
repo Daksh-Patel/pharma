@@ -12,23 +12,23 @@ const stats = [
   {
     id: 1,
     icon: User,
-    value: 10,
+    value: 8,
     suffix: "+",
     label: "Years of Experience",
   },
   {
     id: 2,
     icon: Map,
-    value: 20,
+    value: 10,
     suffix: "+",
     label: "Countries",
   },
   {
     id: 3,
     icon: ClipboardList,
-    value: 500,
+    value: 150,
     suffix: "+",
-    label: "Dosage Forms",
+    label: "Products",
   },
   {
     id: 4,
