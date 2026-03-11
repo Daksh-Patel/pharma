@@ -14,6 +14,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/tailwind-components/ui/table"
+
 import { Button } from "@/tailwind-components/ui/button"
 import { Send } from "lucide-react"
 
@@ -25,13 +26,8 @@ export default function ProductCategoryClient({ category }) {
     autoplay.current,
   ])
 
-  const scrollPrev = () => {
-    emblaApi?.scrollPrev()
-  }
-
-  const scrollNext = () => {
-    emblaApi?.scrollNext()
-  }
+  const scrollPrev = () => emblaApi?.scrollPrev()
+  const scrollNext = () => emblaApi?.scrollNext()
 
   const handleRouteContactUs = () => {
     router.push("/contact")
@@ -40,77 +36,87 @@ export default function ProductCategoryClient({ category }) {
   return (
     <div>
       {/* SLIDER */}
-      <div className='relative overflow-hidden rounded-lg mb-8'>
+      <div className='relative overflow-hidden rounded-lg mb-6 md:mb-8'>
         <div className='overflow-hidden' ref={emblaRef}>
           <div className='flex'>
             {category.bannerImages.map((img, i) => (
-              <div key={i} className='flex-[0_0_100%] relative h-87.5'>
+              <div
+                key={i}
+                className='flex-[0_0_100%] relative h-52 sm:h-64 md:h-80 lg:h-[420px]'
+              >
                 <Image src={img} alt='banner' fill className='object-cover' />
               </div>
             ))}
           </div>
         </div>
 
-        {/* PREV BUTTON */}
+        {/* PREV */}
         <button
           onClick={scrollPrev}
-          className='absolute left-5 top-1/2 -translate-y-1/2 z-30
-          w-14 h-14 rounded-full
+          className='absolute left-2 md:left-5 top-1/2 -translate-y-1/2 z-30
+          w-9 h-9 md:w-12 md:h-12
+          rounded-full
           bg-black/30 hover:bg-black/50
           backdrop-blur-md
           flex items-center justify-center'
         >
-          <svg width='24' height='24' stroke='white' fill='none'>
+          <svg width='20' height='20' stroke='white' fill='none'>
             <path d='M15 19l-7-7 7-7' strokeWidth='2' />
           </svg>
         </button>
 
-        {/* NEXT BUTTON */}
+        {/* NEXT */}
         <button
           onClick={scrollNext}
-          className='absolute right-5 top-1/2 -translate-y-1/2 z-30
-          w-14 h-14 rounded-full
+          className='absolute right-2 md:right-5 top-1/2 -translate-y-1/2 z-30
+          w-9 h-9 md:w-12 md:h-12
+          rounded-full
           bg-black/30 hover:bg-black/50
           backdrop-blur-md
           flex items-center justify-center'
         >
-          <svg width='24' height='24' stroke='white' fill='none'>
+          <svg width='20' height='20' stroke='white' fill='none'>
             <path d='M9 5l7 7-7 7' strokeWidth='2' />
           </svg>
         </button>
       </div>
 
       {/* TITLE */}
-      <h2 className='text-2xl font-bold text-primary mb-6'>{category.title}</h2>
+      <h2 className='text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6'>
+        {category.title}
+      </h2>
 
-      {/* TABLE */}
-      <Table className={"max-h-100 overflow-auto"}>
-        <TableHeader>
-          <TableRow>
-            <TableHead>Sr No</TableHead>
-            <TableHead>Generic Name</TableHead>
-            <TableHead>Strengths</TableHead>
-            <TableHead>Dosage Form</TableHead>
-          </TableRow>
-        </TableHeader>
-
-        <TableBody>
-          {category.products.map((item, index) => (
-            <TableRow key={item.id}>
-              <TableCell>{index + 1}</TableCell>
-              <TableCell>{item.name}</TableCell>
-              <TableCell>{item.strength}</TableCell>
-              <TableCell>{item.form}</TableCell>
+      {/* TABLE SCROLL WRAPPER */}
+      <div className='w-full overflow-x-auto'>
+        <Table className='min-w-[600px]'>
+          <TableHeader>
+            <TableRow>
+              <TableHead>Sr No</TableHead>
+              <TableHead>Generic Name</TableHead>
+              <TableHead>Strengths</TableHead>
+              <TableHead>Dosage Form</TableHead>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHeader>
 
+          <TableBody>
+            {category.products.map((item, index) => (
+              <TableRow key={item.id}>
+                <TableCell>{index + 1}</TableCell>
+                <TableCell>{item.name}</TableCell>
+                <TableCell>{item.strength}</TableCell>
+                <TableCell>{item.form}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+
+      {/* BUTTON */}
       <Button
-        className={"mt-5 flex w-full ml-auto max-w-40"}
+        className='mt-6 w-full sm:w-auto sm:min-w-40'
         onClick={handleRouteContactUs}
       >
-        Send Inquiry <Send />
+        Send Inquiry <Send className='ml-2 w-4 h-4' />
       </Button>
     </div>
   )

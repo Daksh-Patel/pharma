@@ -21,36 +21,61 @@ export default function ProductsLayout({ children }) {
     <>
       <ReuseBannerSection title={bannerTitle} />
 
-      <section className='py-20'>
-        <div className='container flex gap-10'>
-          {/* LEFT SIDEBAR */}
-          <div className='w-1/4 sticky top-32 h-fit bg-gray-100 p-6 rounded-lg'>
-            <h2 className='text-xl font-bold mb-6'>Product Categories</h2>
-
-            <ul className='space-y-2'>
+      <section className='py-12 md:py-16 lg:py-20'>
+        <div className='container'>
+          {/* MOBILE CATEGORY SCROLL */}
+          <div className='lg:hidden mb-8 overflow-x-auto'>
+            <div className='flex gap-3 min-w-max'>
               {productCategories.map((cat) => {
                 const active = pathname.includes(cat.slug)
 
                 return (
-                  <li key={cat.slug}>
-                    <Link
-                      href={`/products/${cat.slug}`}
-                      className={`block px-4 py-3 rounded-md transition ${
-                        active
-                          ? "bg-primary text-white"
-                          : "bg-white hover:bg-gray-200"
-                      }`}
-                    >
-                      {cat.title}
-                    </Link>
-                  </li>
+                  <Link
+                    key={cat.slug}
+                    href={`/products/${cat.slug}`}
+                    className={`px-4 py-2 whitespace-nowrap rounded-md text-sm font-medium transition ${
+                      active
+                        ? "bg-primary text-white"
+                        : "bg-gray-100 hover:bg-gray-200"
+                    }`}
+                  >
+                    {cat.title}
+                  </Link>
                 )
               })}
-            </ul>
+            </div>
           </div>
 
-          {/* RIGHT CONTENT */}
-          <div className='w-3/4'>{children}</div>
+          <div className='flex flex-col lg:flex-row gap-8 lg:gap-10'>
+            {/* SIDEBAR */}
+            <div className='hidden lg:block lg:w-1/4 sticky top-32 h-fit bg-gray-100 p-6 rounded-lg'>
+              <h2 className='text-xl font-bold mb-6'>Product Categories</h2>
+
+              <ul className='space-y-2'>
+                {productCategories.map((cat) => {
+                  const active = pathname.includes(cat.slug)
+
+                  return (
+                    <li key={cat.slug}>
+                      <Link
+                        href={`/products/${cat.slug}`}
+                        className={`block px-4 py-3 rounded-md transition ${
+                          active
+                            ? "bg-primary text-white"
+                            : "bg-white hover:bg-gray-200"
+                        }`}
+                      >
+                        {cat.title}
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+
+            {/* CONTENT */}
+            <div className='lg:w-3/4 w-full'>{children}</div>
+          </div>
         </div>
       </section>
     </>
