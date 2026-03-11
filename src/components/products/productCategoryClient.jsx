@@ -42,7 +42,7 @@ export default function ProductCategoryClient({ category }) {
             {category.bannerImages.map((img, i) => (
               <div
                 key={i}
-                className='flex-[0_0_100%] relative h-52 sm:h-64 md:h-80 lg:h-[420px]'
+                className='flex-[0_0_100%] relative h-52 sm:h-64 md:h-80 lg:h-105'
               >
                 <Image src={img} alt='banner' fill className='object-cover' />
               </div>
@@ -88,7 +88,7 @@ export default function ProductCategoryClient({ category }) {
 
       {/* TABLE SCROLL WRAPPER */}
       <div className='w-full overflow-x-auto'>
-        <Table className='min-w-[600px]'>
+        <Table className='min-w-150'>
           <TableHeader>
             <TableRow>
               <TableHead>Sr No</TableHead>
