@@ -5,19 +5,14 @@ import useEmblaCarousel from "embla-carousel-react"
 import Autoplay from "embla-carousel-autoplay"
 import React, { useRef } from "react"
 
-import AddImage1 from "@/assets/images/iso-9001-grey.jpg"
 import AddImage2 from "@/assets/images/who-gmp-grey.jpg"
 import AddImage3 from "@/assets/images/gmp-certfice-grey.jpg"
 import AddImage4 from "@/assets/images/usfda.png"
-import AddImage5 from "@/assets/images/iso-9001-grey.jpg"
 
 const AdvertiseList = [
-  { id: 1, image: AddImage1 },
   { id: 2, image: AddImage2 },
   { id: 3, image: AddImage3 },
   { id: 4, image: AddImage4 },
-  { id: 5, image: AddImage5 },
-  { id: 6, image: AddImage2 },
 ]
 
 export default function Advertise() {
@@ -42,7 +37,7 @@ export default function Advertise() {
     <section className='bg-gray-100 py-20'>
       <div className='container'>
         <div className='overflow-hidden' ref={emblaRef}>
-          <div className='flex items-center'>
+          <div className='flex items-center justify-center'>
             {AdvertiseList.map((item) => (
               <div
                 key={item.id}
