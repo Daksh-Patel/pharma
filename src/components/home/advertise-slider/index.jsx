@@ -1,9 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import useEmblaCarousel from "embla-carousel-react"
-import Autoplay from "embla-carousel-autoplay"
-import React, { useRef } from "react"
+import React from "react"
 
 import AddImage2 from "@/assets/images/who-gmp-grey.jpg"
 import AddImage3 from "@/assets/images/gmp-certfice-grey.jpg"
@@ -16,60 +14,31 @@ const AdvertiseList = [
 ]
 
 export default function Advertise() {
-  const autoplay = useRef(
-    Autoplay({
-      delay: 2000,
-      stopOnInteraction: false,
-    }),
-  )
-
-  const [emblaRef] = useEmblaCarousel(
-    {
-      loop: true,
-      align: "start",
-      slidesToScroll: 1,
-      dragFree: true,
-    },
-    [autoplay.current],
-  )
-
   return (
-    <section className='bg-gray-100 py-20'>
+    <section className='bg-gray-100 py-12 md:py-16 lg:py-20'>
       <div className='container'>
-        <div className='overflow-hidden' ref={emblaRef}>
-          <div className='flex items-center justify-center'>
-            {AdvertiseList.map((item) => (
-              <div
-                key={item.id}
+        <div className='grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-8 lg:gap-10 place-items-center max-w-200 mx-auto'>
+          {AdvertiseList.map((item) => (
+            <div
+              key={item.id}
+              className='group w-full max-w-55 bg-white p-4 md:p-6 rounded-md shadow-sm hover:shadow-md transition flex items-center justify-center'
+            >
+              <Image
+                src={item.image}
+                alt='certification'
+                width={180}
+                height={100}
                 className='
-                flex-[0_0_50%]
-                sm:flex-[0_0_33.33%]
-                md:flex-[0_0_25%]
-                lg:flex-[0_0_20%]
-                min-w-0
-                px-4
-                flex justify-center
+                  max-h-20 md:max-h-24 lg:max-h-28
+                  object-contain
+                  transition-all duration-300
+                  grayscale
+                  group-hover:grayscale-0
+                  group-hover:scale-105
                 '
-              >
-                <div className='group bg-white p-6 max-h-38 rounded-md shadow-sm hover:shadow-md transition'>
-                  <Image
-                    src={item.image}
-                    alt='certification'
-                    width={180}
-                    height={100}
-                    className='
-                    max-h-30
-                    object-contain
-                    transition-all duration-300
-                    grayscale
-                    group-hover:grayscale-0
-                    group-hover:scale-105
-                    '
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
