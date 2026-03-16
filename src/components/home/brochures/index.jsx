@@ -39,7 +39,11 @@ const Brochures = () => {
           </div>
 
           {/* Download Button */}
-          <Link href='/brochures/grishty_pharma_brochure.pdf' target='_blank'>
+          <Link
+            href='/brochures/grishty_pharma_brochure.pdf'
+            target='_blank'
+            download='grishty-pharma-brochure.pdf'
+          >
             <Button
               className='
     bg-white text-primary
