@@ -2,6 +2,8 @@
 
 import Image from "next/image"
 import React from "react"
+import Link from "next/link"
+
 import BrochuresImage from "@/assets/images/brochures.png"
 import { Button } from "@/tailwind-components/ui/button"
 import { Download } from "lucide-react"
@@ -36,23 +38,25 @@ const Brochures = () => {
             </p>
           </div>
 
-          {/* Button */}
-          <Button
-            className='
-            bg-white text-primary
-            hover:bg-black hover:text-white
-            h-12 sm:h-14
-            px-6 sm:px-8
-            text-base sm:text-lg
-            rounded-md
-            flex items-center gap-3
-            shadow-xl
-            transition-all
-            '
-          >
-            DOWNLOAD BROCHURES
-            <Download className='w-5 h-5 sm:w-6 sm:h-6 shrink-0' />
-          </Button>
+          {/* Download Button */}
+          <Link href='/brochures/grishty_pharma_brochure.pdf' target='_blank'>
+            <Button
+              className='
+    bg-white text-primary
+    hover:bg-black hover:text-white
+    h-12 sm:h-14
+    px-6 sm:px-8
+    text-base sm:text-lg
+    rounded-md
+    flex items-center gap-3
+    shadow-xl
+    transition-all
+    '
+            >
+              DOWNLOAD BROCHURES
+              <Download className='w-7 h-7 sm:w-8 sm:h-8 shrink-0' />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
