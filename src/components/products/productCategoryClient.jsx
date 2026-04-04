@@ -51,34 +51,39 @@ export default function ProductCategoryClient({ category }) {
         </div>
 
         {/* PREV */}
-        <button
-          onClick={scrollPrev}
-          className='absolute left-2 md:left-5 top-1/2 -translate-y-1/2 z-30
-          w-9 h-9 md:w-12 md:h-12
-          rounded-full
-          bg-black/30 hover:bg-black/50
-          backdrop-blur-md
-          flex items-center justify-center'
-        >
-          <svg width='20' height='20' stroke='white' fill='none'>
-            <path d='M15 19l-7-7 7-7' strokeWidth='2' />
-          </svg>
-        </button>
 
-        {/* NEXT */}
-        <button
-          onClick={scrollNext}
-          className='absolute right-2 md:right-5 top-1/2 -translate-y-1/2 z-30
+        {category.bannerImages.length > 1 && (
+          <>
+            <button
+              onClick={scrollPrev}
+              className='absolute left-2 md:left-5 top-1/2 -translate-y-1/2 z-30
           w-9 h-9 md:w-12 md:h-12
           rounded-full
           bg-black/30 hover:bg-black/50
           backdrop-blur-md
           flex items-center justify-center'
-        >
-          <svg width='20' height='20' stroke='white' fill='none'>
-            <path d='M9 5l7 7-7 7' strokeWidth='2' />
-          </svg>
-        </button>
+            >
+              <svg width='20' height='20' stroke='white' fill='none'>
+                <path d='M15 19l-7-7 7-7' strokeWidth='2' />
+              </svg>
+            </button>
+
+            {/* NEXT */}
+            <button
+              onClick={scrollNext}
+              className='absolute right-2 md:right-5 top-1/2 -translate-y-1/2 z-30
+          w-9 h-9 md:w-12 md:h-12
+          rounded-full
+          bg-black/30 hover:bg-black/50
+          backdrop-blur-md
+          flex items-center justify-center'
+            >
+              <svg width='20' height='20' stroke='white' fill='none'>
+                <path d='M9 5l7 7-7 7' strokeWidth='2' />
+              </svg>
+            </button>
+          </>
+        )}
       </div>
 
       {/* TITLE */}
