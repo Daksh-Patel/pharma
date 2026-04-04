@@ -84,9 +84,9 @@ const NutraceuticalManufacturing = () => {
           </h3>
 
           <p className='text-gray-600'>
-            Ranked among the top nutraceutical manufacturers in India, Saviour
-            Pharmaceuticals boasts a skilled team focused on producing
-            high-quality nutraceutical products.
+            Ranked among the top nutraceutical manufacturers in India, Gristy
+            Pharma boasts a skilled team focused on producing high-quality
+            nutraceutical products.
           </p>
 
           {/* Feature Pills */}

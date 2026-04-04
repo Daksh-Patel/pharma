@@ -92,8 +92,16 @@ export default function ProductCategoryClient({ category }) {
           <TableHeader>
             <TableRow>
               <TableHead>Sr No</TableHead>
-              <TableHead>Generic Name</TableHead>
-              <TableHead>Strengths</TableHead>
+              <TableHead
+                className={"max-w-120 wrap-break-word whitespace-normal"}
+              >
+                Generic Name
+              </TableHead>
+              <TableHead
+                className={"max-w-60 wrap-break-word whitespace-normal"}
+              >
+                Strengths
+              </TableHead>
               <TableHead>Dosage Form</TableHead>
             </TableRow>
           </TableHeader>
@@ -102,8 +110,16 @@ export default function ProductCategoryClient({ category }) {
             {category.products.map((item, index) => (
               <TableRow key={item.id}>
                 <TableCell>{index + 1}</TableCell>
-                <TableCell>{item.name}</TableCell>
-                <TableCell>{item.strength}</TableCell>
+                <TableCell
+                  className={"max-w-120 wrap-break-word whitespace-normal"}
+                >
+                  {item.name}
+                </TableCell>
+                <TableCell
+                  className={"max-w-60 wrap-break-word whitespace-normal"}
+                >
+                  {item.strength}
+                </TableCell>
                 <TableCell>{item.form}</TableCell>
               </TableRow>
             ))}

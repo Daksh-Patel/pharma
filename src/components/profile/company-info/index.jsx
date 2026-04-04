@@ -32,7 +32,7 @@ const sections = [
   },
   {
     id: 4,
-    title: "WHY SAVIOUR",
+    title: "WHY Ghristy",
     image: Image4,
     content:
       "Gristy Pharma stands out in the industry because we are committed to quality, affordability, and community health. Our experienced team ensures that every product meets the highest standards.",

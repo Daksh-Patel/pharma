@@ -43,7 +43,7 @@ const Featuring = () => {
             renowned for manufacturing, marketing, distributing, and sourcing
             high-quality pharmaceutical products. As a trusted leader in capsule
             production, we offer a diverse range of tablets including pills,
-            caplets, and orally disintegrating tablets.
+            Capsules, and orally disintegrating tablets.
           </p>
 
           <p className='text-gray-600 leading-relaxed'>
@@ -61,8 +61,8 @@ const Featuring = () => {
           </h3>
 
           <p className='text-gray-600'>
-            As a well-known tablet and capsule manufacturer in India, Saviour
-            Pharmaceuticals offers an extensive range of pharmaceutical products
+            As a well-known tablet and capsule manufacturer in India, Gristy
+            Pharma offers an extensive range of pharmaceutical products
             delivering high-quality and effective drug solutions tailored to
             diverse needs.
           </p>

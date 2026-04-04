@@ -29,4 +29,41 @@ export const ProductCategories = [
     title: "Nutraceuticals",
     href: "/products/nutraceuticals",
   },
+  {
+    id: 37,
+    title: "Cardiovascular",
+    href: "/products/cardiovascular",
+  },
+
+  // ✅ Added missing ones
+  {
+    id: 38,
+    title: "Anti Bacterial",
+    href: "/products/anti-bacterial",
+  },
+  {
+    id: 39,
+    title: "Anti Ulcer",
+    href: "/products/anti-ulcer",
+  },
+  {
+    id: 40,
+    title: "Anti Fungal",
+    href: "/products/anti-fungal",
+  },
+  {
+    id: 41,
+    title: "Anti Allergic",
+    href: "/products/anti-allergic",
+  },
+  {
+    id: 42,
+    title: "Pain Management",
+    href: "/products/pain-management",
+  },
+  {
+    id: 43,
+    title: "Food Supplements And Nutraceutical Products",
+    href: "/products/food-supplements-nutraceutical-products",
+  },
 ]
