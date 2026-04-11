@@ -1,12 +1,23 @@
-import Image1 from "@/assets/images/banner_img1.png"
-import Image2 from "@/assets/images/banner_img2.png"
-import Image3 from "@/assets/images/banner_img3.png"
+import AntiDiabeticImage from "@/assets/images/AntiDiabetic.png"
+import OncologyImage from "@/assets/images/Oncology.png"
+import AntibioticsImage from "@/assets/images/Antibiotics.png"
+import AntiHypertensiveImage from "@/assets/images/AntiHypertensive.png"
+import BetaLactumImage from "@/assets/images/BetaLactum.png"
+import NutraceuticalsImage from "@/assets/images/Nutraceuticals.png"
+import CardiovascularImage from "@/assets/images/Cardiovascular.png"
+import AntiBacterialImage from "@/assets/images/AntiBacterial.png"
+import AntiUlcerImage from "@/assets/images/AntiUlcer.png"
+import AntiFungalImage from "@/assets/images/AntiFungal.png"
+import AntiAllergicImage from "@/assets/images/AntiAllergic.png"
+// import TrypsinChymotrypsinTabletsImage from "@/assets/images/TrypsinChymotrypsinTablets.png"
+import ParacetamolandCaffeineCapsulesImage from "@/assets/images/ParacetamolandCaffeineCapsules.png"
+import CalciumCarbonateTabletsUSPImage from "@/assets/images/CalciumCarbonateTabletsUSP.png"
 
 export const productCategories = [
   {
     title: "Anti Diabetic",
     slug: "anti-diabetic",
-    bannerImages: [Image1, Image2],
+    bannerImages: [AntiDiabeticImage],
     products: [
       {
         id: 1,
@@ -116,7 +127,7 @@ export const productCategories = [
   {
     title: "Oncology",
     slug: "oncology",
-    bannerImages: [Image3],
+    bannerImages: [OncologyImage],
     products: [
       {
         id: 1,
@@ -135,7 +146,7 @@ export const productCategories = [
   {
     title: "Antibiotics",
     slug: "antibiotics",
-    bannerImages: [Image1],
+    bannerImages: [AntibioticsImage],
     products: [
       {
         id: 1,
@@ -154,7 +165,7 @@ export const productCategories = [
   {
     title: "Anti Hypertensive",
     slug: "anti-hypertensive",
-    bannerImages: [Image3],
+    bannerImages: [AntiHypertensiveImage],
     products: [
       {
         id: 1,
@@ -173,7 +184,7 @@ export const productCategories = [
   {
     title: "Beta Lactum",
     slug: "beta-lactum",
-    bannerImages: [Image2, Image3],
+    bannerImages: [BetaLactumImage],
     products: [
       {
         id: 1,
@@ -192,7 +203,7 @@ export const productCategories = [
   {
     title: "Nutraceuticals",
     slug: "nutraceuticals",
-    bannerImages: [Image3],
+    bannerImages: [NutraceuticalsImage],
     products: [
       {
         id: 1,
@@ -212,7 +223,7 @@ export const productCategories = [
   {
     title: "Cardiovascular",
     slug: "cardiovascular",
-    bannerImages: [Image1],
+    bannerImages: [CardiovascularImage],
     products: [
       {
         id: 1,
@@ -466,7 +477,7 @@ export const productCategories = [
   {
     title: "Anti Bacterial",
     slug: "anti-bacterial",
-    bannerImages: [Image2],
+    bannerImages: [AntiBacterialImage],
     products: [
       {
         id: 1,
@@ -881,7 +892,7 @@ export const productCategories = [
   {
     title: "Anti Ulcer",
     slug: "anti-ulcer",
-    bannerImages: [Image3],
+    bannerImages: [AntiUlcerImage],
     products: [
       {
         id: 1,
@@ -1032,7 +1043,7 @@ export const productCategories = [
   {
     title: "Anti Fungal",
     slug: "anti-fungal",
-    bannerImages: [Image2],
+    bannerImages: [AntiFungalImage],
     products: [
       {
         id: 1,
@@ -1141,7 +1152,7 @@ export const productCategories = [
   {
     title: "Anti Allergic",
     slug: "anti-allergic",
-    bannerImages: [Image1],
+    bannerImages: [AntiAllergicImage],
     products: [
       {
         id: 1,
@@ -1304,7 +1315,7 @@ export const productCategories = [
   {
     title: "Pain Management",
     slug: "pain-management",
-    bannerImages: [Image3],
+    bannerImages: [ParacetamolandCaffeineCapsulesImage],
     products: [
       {
         id: 1,
@@ -1659,7 +1670,7 @@ export const productCategories = [
   {
     title: "Food Supplements And Nutraceutical Products",
     slug: "food-supplements-nutraceutical-products",
-    bannerImages: [Image2],
+    bannerImages: [CalciumCarbonateTabletsUSPImage],
     products: [
       {
         id: 1,
