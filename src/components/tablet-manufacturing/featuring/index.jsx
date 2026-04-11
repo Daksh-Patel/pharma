@@ -6,9 +6,8 @@ import {
   AccordionTrigger,
 } from "@/tailwind-components/ui/accordion"
 import React from "react"
-import TabletImage from "@/assets/images/tablets.jpg"
+import TabletImage from "@/assets/images/tablet_manufacturing.png"
 import Image from "next/image"
-import { CheckCircle } from "lucide-react"
 import Feature from "@/components/feature"
 import Tag from "@/components/tag"
 

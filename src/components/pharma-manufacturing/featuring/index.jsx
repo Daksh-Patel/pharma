@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-import PharmaMainImage from "@/assets/images/pharma-main.jpg"
+import PharmaMainImage from "@/assets/images/trusted_pharma.png"
 import PharmaSideImage from "@/assets/images/pharma-side.jpg"
 
 const Feature = () => {
@@ -29,7 +29,7 @@ const Feature = () => {
             Manufacturing in India
           </h2>
 
-          <div className='grid md:grid-cols-2 gap-8 items-start'>
+          <div className='grid md:grid-cols-1 gap-8 items-start'>
             {/* Text */}
             <div className='space-y-4 text-gray-600 leading-relaxed'>
               <p>
@@ -47,17 +47,6 @@ const Feature = () => {
             </div>
 
             {/* Side Image */}
-            <div className='border p-2 rounded-md'>
-              <div className='relative w-full h-65 rounded overflow-hidden'>
-                <Image
-                  src={PharmaSideImage}
-                  alt='Pharma Tablets'
-                  fill
-                  className='object-cover'
-                  placeholder='blur'
-                />
-              </div>
-            </div>
           </div>
         </div>
 

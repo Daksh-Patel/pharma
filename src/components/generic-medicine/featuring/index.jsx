@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Tag from "@/components/tag"
 
-import GenericImage from "@/assets/images/generic-image.jpg"
+import GenericImage from "@/assets/images/medicine_production.png"
 
 const Feature = () => {
   return (
@@ -11,20 +11,20 @@ const Feature = () => {
       <div className='container space-y-12'>
         {/* Intro */}
         <div className='space-y-6'>
-          <div>
-            <p className='text-sm text-gray-500'>
-              Advanced Generic Medicine Manufacturing Pharmaceutical Company
-            </p>
-
-            <h2 className='text-2xl font-bold text-primary'>
-              Generic Medicine Manufacturing Company
-            </h2>
-          </div>
-
           {/* Two column layout */}
           <div className='grid md:grid-cols-2 gap-10 items-start'>
             {/* Left Content */}
             <div className='space-y-4 text-gray-600 leading-relaxed'>
+              <div>
+                <p className='text-sm text-gray-500'>
+                  Advanced Generic Medicine Manufacturing Pharmaceutical Company
+                </p>
+
+                <h2 className='text-2xl font-bold text-primary'>
+                  Generic Medicine Manufacturing Company
+                </h2>
+              </div>
+
               <p>
                 Gristy Pharma is a leading generic medicine manufacturing
                 company based in Ahmedabad, Gujarat. We have established a

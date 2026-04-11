@@ -1,9 +1,23 @@
 "use client"
 
+import PharmaMainImage from "@/assets/images/quality.png"
+import Image from "next/image"
+
 const Feature = () => {
   return (
     <section className='py-16'>
       <div className='container space-y-12'>
+        <div className='border p-2 rounded-md'>
+          <div className='relative w-full h-105 md:h-130 rounded overflow-hidden'>
+            <Image
+              src={PharmaMainImage}
+              alt='Pharma Manufacturing'
+              fill
+              className='object-cover'
+              placeholder='blur'
+            />
+          </div>
+        </div>
         {/* Section 1 */}
         <div className='space-y-6'>
           <h2 className='text-xl md:text-2xl font-bold text-primary border-l-4 border-primary pl-4'>
