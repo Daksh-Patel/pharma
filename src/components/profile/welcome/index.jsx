@@ -52,6 +52,7 @@ const WelcomeSection = () => {
                 alt='Welcome'
                 fill
                 className='object-cover rounded-md'
+                placeholder='blur'
               />
             </div>
           </div>

@@ -49,6 +49,7 @@ const Services = () => {
         fill
         priority
         className='object-cover'
+        placeholder='blur'
       />
 
       {/* Overlay */}

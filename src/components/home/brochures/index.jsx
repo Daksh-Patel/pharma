@@ -18,6 +18,7 @@ const Brochures = () => {
         fill
         priority
         className='object-cover'
+        placeholder='blur'
       />
 
       {/* Gradient Overlay */}

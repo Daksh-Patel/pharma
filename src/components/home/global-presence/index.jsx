@@ -104,6 +104,7 @@ const GlobalPresence = () => {
                       width={100}
                       height={64}
                       className='object-cover min-h-16'
+                      placeholder='blur'
                     />
                   </div>
 

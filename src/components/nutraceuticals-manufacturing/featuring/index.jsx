@@ -60,6 +60,7 @@ const NutraceuticalManufacturing = () => {
               alt='Nutraceutical Manufacturing'
               fill
               className='object-cover'
+              placeholder='blur'
             />
           </div>
         </div>

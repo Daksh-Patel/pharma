@@ -142,6 +142,7 @@ export default function HomeBanner() {
             fill
             priority
             className='object-cover object-center'
+            placeholder='blur'
           />
         </motion.div>
       </AnimatePresence>
@@ -287,6 +288,7 @@ export default function HomeBanner() {
               fill
               className='object-cover'
               sizes='64px'
+              placeholder='blur'
             />
             {i === index && (
               <motion.div

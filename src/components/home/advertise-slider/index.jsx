@@ -36,6 +36,7 @@ export default function Advertise() {
                   group-hover:grayscale-0
                   group-hover:scale-105
                 '
+                placeholder='blur'
               />
             </div>
           ))}

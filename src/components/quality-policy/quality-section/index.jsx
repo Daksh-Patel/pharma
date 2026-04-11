@@ -51,6 +51,7 @@ const QualitySection = () => {
                 alt={"image_1"}
                 fill
                 className='object-cover rounded-md'
+                placeholder='blur'
               />
             </div>
           </Card>
@@ -70,6 +71,7 @@ const QualitySection = () => {
                 alt={"image_2"}
                 fill
                 className='object-cover rounded-md'
+                placeholder='blur'
               />
             </div>
           </Card>

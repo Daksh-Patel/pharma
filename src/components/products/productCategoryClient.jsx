@@ -44,7 +44,13 @@ export default function ProductCategoryClient({ category }) {
                 key={i}
                 className='flex-[0_0_100%] relative h-52 sm:h-64 md:h-80 lg:h-105'
               >
-                <Image src={img} alt='banner' fill className='object-cover' />
+                <Image
+                  src={img}
+                  alt='banner'
+                  fill
+                  className='object-cover'
+                  placeholder='blur'
+                />
               </div>
             ))}
           </div>

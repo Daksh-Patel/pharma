@@ -93,6 +93,7 @@ export default function OurRegisteredProduct() {
                         alt={product.title}
                         fill
                         className='object-contain'
+                        placeholder='blur'
                       />
                     </div>
 

@@ -65,6 +65,7 @@ export default function CompanyInfoSection() {
                   alt={item.title}
                   fill
                   className='object-cover rounded-md'
+                  placeholder='blur'
                 />
               </div>
             </Card>

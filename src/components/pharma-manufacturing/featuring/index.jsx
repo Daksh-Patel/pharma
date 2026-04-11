@@ -17,6 +17,7 @@ const Feature = () => {
               alt='Pharma Manufacturing'
               fill
               className='object-cover'
+              placeholder='blur'
             />
           </div>
         </div>
@@ -53,6 +54,7 @@ const Feature = () => {
                   alt='Pharma Tablets'
                   fill
                   className='object-cover'
+                  placeholder='blur'
                 />
               </div>
             </div>

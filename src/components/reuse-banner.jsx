@@ -13,6 +13,7 @@ const ReuseBannerSection = ({ title }) => {
         fill
         priority
         className='object-cover'
+        placeholder='blur'
       />
 
       {/* Green Overlay */}

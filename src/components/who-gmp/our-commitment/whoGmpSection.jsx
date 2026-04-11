@@ -37,6 +37,7 @@ const WhoGmpSection = ({
                 src={image}
                 alt={title}
                 className='w-full h-auto object-cover'
+                placeholder='blur'
               />
             </div>
           )}

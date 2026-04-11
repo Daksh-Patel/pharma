@@ -53,6 +53,7 @@ const Feature = () => {
                   alt='Generic Medicine'
                   fill
                   className='object-cover'
+                  placeholder='blur'
                 />
               </div>
             </div>

@@ -17,6 +17,7 @@ const WelcomeSection = () => {
               alt='Welcome Image'
               className='object-fit w-full rounded-lg'
               priority
+              placeholder='blur'
             />
           </div>
 

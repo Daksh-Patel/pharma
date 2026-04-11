@@ -24,6 +24,7 @@ const Featuring = () => {
               alt='Tablet Manufacturing'
               fill
               className='object-cover'
+              placeholder='blur'
             />
           </div>
         </div>

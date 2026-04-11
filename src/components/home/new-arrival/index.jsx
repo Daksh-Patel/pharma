@@ -87,6 +87,7 @@ export default function NewArrivals() {
                         alt={product.title}
                         fill
                         className='object-contain'
+                        placeholder='blur'
                       />
                     </div>
 

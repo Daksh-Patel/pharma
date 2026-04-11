@@ -62,6 +62,7 @@ const LatestNews = () => {
                   alt={item.title}
                   fill
                   className='object-cover transition-transform duration-500 group-hover:scale-110'
+                  placeholder='blur'
                 />
               </div>
 
