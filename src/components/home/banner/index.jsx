@@ -12,8 +12,8 @@ const slides = [
   {
     image: BannerImage1,
     eyebrow: "Excellence in",
-    title: "Tablet",
-    titleAccent: "Manufacturing",
+    title: "Best Tablets",
+    titleAccent: "Manufacturing In India",
     description:
       "Precision-engineered pharmaceutical tablets crafted to the highest global standards of purity and efficacy.",
     tag: "ISO 9001 Certified",
@@ -22,8 +22,8 @@ const slides = [
   {
     image: BannerImage2,
     eyebrow: "India's Most",
-    title: "Trusted",
-    titleAccent: "Pharma Partner",
+    title: "Trusted Pharma",
+    titleAccent: "Company In Gujarat",
     description:
       "Building lasting partnerships on integrity, transparency, and decades of pharmaceutical expertise.",
     tag: "GMP Compliant",
@@ -32,8 +32,8 @@ const slides = [
   {
     image: BannerImage3,
     eyebrow: "Uncompromising",
-    title: "Medicine",
-    titleAccent: "Production",
+    title: "High Quality",
+    titleAccent: "Medicine Production",
     description:
       "State-of-the-art facilities delivering life-changing medicines to patients across the globe.",
     tag: "WHO-GMP Approved",
@@ -217,7 +217,7 @@ export default function HomeBanner() {
             initial='hidden'
             animate='visible'
             exit='exit'
-            className='max-w-lg lg:max-w-2xl'
+            className='max-w-lg lg:max-w-4xl'
           >
             {/* TAG PILL */}
             <motion.div variants={fadeSlide} custom={0} className='mb-5'>
@@ -227,22 +227,12 @@ export default function HomeBanner() {
               </span>
             </motion.div>
 
-            {/* EYEBROW */}
-            <div className='overflow-hidden mb-1'>
-              <motion.p
-                variants={wordVariants}
-                className='text-foreground/50 text-sm md:text-base font-medium tracking-[0.18em] uppercase'
-              >
-                {slide.eyebrow}
-              </motion.p>
-            </div>
-
             {/* TITLE LINE 1 */}
             <div className='overflow-hidden'>
               <motion.h1
                 variants={wordVariants}
-                className='text-foreground font-black leading-none tracking-tight'
-                style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)" }}
+                className='text-foreground font-bold lg:leading-22 tracking-tight'
+                style={{ fontSize: "clamp(2.8rem, 7vw, 4.5rem)" }}
               >
                 {slide.title}
               </motion.h1>
@@ -252,8 +242,8 @@ export default function HomeBanner() {
             <div className='overflow-hidden mb-5'>
               <motion.h1
                 variants={wordVariants}
-                className='text-primary font-black leading-none tracking-tight'
-                style={{ fontSize: "clamp(2.8rem, 7vw, 5.5rem)" }}
+                className='text-primary font-bold lg:leading-22 tracking-tight'
+                style={{ fontSize: "clamp(2.8rem, 7vw, 4.5rem)" }}
               >
                 {slide.titleAccent}
               </motion.h1>
