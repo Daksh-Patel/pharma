@@ -231,7 +231,7 @@ export default function HomeBanner() {
             <div className='overflow-hidden'>
               <motion.h1
                 variants={wordVariants}
-                className='text-foreground font-bold lg:leading-22 tracking-tight'
+                className='text-primary font-bold lg:leading-22 tracking-tight'
                 style={{ fontSize: "clamp(2.8rem, 7vw, 4.5rem)" }}
               >
                 {slide.title}
@@ -242,7 +242,7 @@ export default function HomeBanner() {
             <div className='overflow-hidden mb-5'>
               <motion.h1
                 variants={wordVariants}
-                className='text-primary font-bold lg:leading-22 tracking-tight'
+                className='text-foreground font-bold lg:leading-22 tracking-tight'
                 style={{ fontSize: "clamp(2.8rem, 7vw, 4.5rem)" }}
               >
                 {slide.titleAccent}
