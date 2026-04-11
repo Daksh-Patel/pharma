@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
-import BannerImage1 from "@/assets/images/banner_img1.png"
-import BannerImage2 from "@/assets/images/banner_img2.png"
-import BannerImage3 from "@/assets/images/banner_img3.png"
+import BannerImage1 from "@/assets/images/tablet_manufacturing.png"
+import BannerImage2 from "@/assets/images/trusted_pharma.png"
+import BannerImage3 from "@/assets/images/medicine_production.png"
 
 const slides = [
   {

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import WelcomeImage from "@/assets/images/welcome.jpg"
+import WelcomeImage from "@/assets/images/gristy.png"
 // import { Button } from "@/tailwind-components/ui/button"
 // import { CircleChevronRight } from "lucide-react"
 

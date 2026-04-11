@@ -11,7 +11,7 @@ import Image from "next/image"
 import Feature from "@/components/feature"
 import Tag from "@/components/tag"
 
-import NutraImage from "@/assets/images/nutra.jpg"
+import NutraImage from "@/assets/images/nutrition.png"
 
 const NutraceuticalManufacturing = () => {
   return (
