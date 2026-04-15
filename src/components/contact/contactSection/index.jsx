@@ -227,7 +227,7 @@ export default function ContactSection() {
         </div>
 
         {/* MAP */}
-        <div className='w-full h-125 mt-20'>
+        {/* <div className='w-full h-125 mt-20'>
           <iframe
             src='https://www.google.com/maps?q=Ahmedabad&output=embed'
             width='100%'
@@ -236,7 +236,7 @@ export default function ContactSection() {
             loading='lazy'
             className='w-full h-full'
           />
-        </div>
+        </div> */}
       </div>
     </section>
   )
