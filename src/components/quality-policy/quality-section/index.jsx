@@ -1,8 +1,8 @@
 import { Card } from "@/tailwind-components/ui/card"
 import React from "react"
 
-import Image1 from "@/assets/images/quality-new.jpg"
-import Image2 from "@/assets/images/quality-new2.jpg"
+import Image1 from "@/assets/images/quality.png"
+import Image2 from "@/assets/images/trusted_pharma.png"
 import Image from "next/image"
 
 const QualitySection = () => {

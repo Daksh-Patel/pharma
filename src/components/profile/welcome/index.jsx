@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import ProfileImage from "@/assets/images/profile-images.jpg"
+import ProfileImage from "@/assets/images/gristy.png"
 
 const WelcomeSection = () => {
   return (
